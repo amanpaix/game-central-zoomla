@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+        <name>plg_custmodrender</name>
+        <author>Anil Rawat (Wilsons)</author>
+        <creationDate>November 2017</creationDate>
+        <copyright>Copyright (C) 2017 Anil Rawat (Wilsons).</copyright>
+        <license>GPL2</license>
+        <authorEmail>anil.rawat@skilrock.com</authorEmail>
+        <authorUrl>www.skilrock.com</authorUrl>
+        <version>1.6.0</version>
+        <description>Overriding renderer</description>
+        <files>
+                 <filename plugin="custmodrender">custmodrender.php</filename>
+                 <filename>index.html</filename>
+        </files>
+        <config>
+        </config>
+</extension>

@@ -1,0 +1,267 @@
+/*************Fonts CSS Start********************************/
+@font-face {
+    font-family: 'AvenirNextRoundedPro';
+    src: url('fonts/AvenirNextRoundedPro-Med.eot?#iefix') format('embedded-opentype'),  url('fonts/AvenirNextRoundedPro-Med.otf')  format('opentype'),
+    url('fonts/AvenirNextRoundedPro-Med.woff') format('woff'), url('fonts/AvenirNextRoundedPro-Med.ttf')  format('truetype'), url('fonts/AvenirNextRoundedPro-Med.svg#AvenirNextRoundedPro-Med') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNextRoundedPro';
+    src: url('fonts/AvenirNextRoundedPro-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/AvenirNextRoundedPro-Bold.otf')  format('opentype'),
+    url('fonts/AvenirNextRoundedPro-Bold.woff') format('woff'), url('fonts/AvenirNextRoundedPro-Bold.ttf')  format('truetype'), url('fonts/AvenirNextRoundedPro-Bold.svg#AvenirNextRoundedPro-Bold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+/*************Fonts CSS End********************************/
+a:focus, a:hover{text-decoration: none;}
+body{
+    background: url('../images/bgIthuba.jpg') no-repeat center top;
+    background-size:cover;
+}
+.body-wrapper {
+    padding: 0;
+}
+.navLinkWrap{
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.logoBox img{height: 68px;}
+header {
+    padding: 8px 0;
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.75) 50%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.75) 50%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+nav.nav {
+    margin-right: 20px;
+}
+nav.nav .btn {
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    padding: 4px 12px;
+}
+nav.nav .btn:active:focus, nav.nav .btn:focus{outline: none;}
+nav.nav .btn.active, nav.nav .btn:active{
+    box-shadow: none;
+    background-color: #f8dc19;
+    color:#ffffff;
+    cursor: default;
+}
+
+.partWrapper {
+    padding: 8px 0;
+    position: relative;
+}
+
+.partWrapper:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.partWrapper .leftPart {
+    /* float: left; */
+    width: calc(100% - 505px);
+    height: calc(100vh - 84px);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.descOuterWrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.98);
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.partWrapper .rightPart {
+    float: right;
+    max-width: 475px;
+}
+
+.formStyle .formWrap.border {
+    border: none;
+    background-color: rgba(255,255,255,0.98);
+    border-radius: 6px;
+    padding: 10px 0;
+}
+
+.formStyle .legendCap {
+    color: #000000;
+}
+
+.formStyle .formWrap.border .panelHead {
+    background-color: transparent;
+    padding-top: 30px;
+}
+
+.formStyle .formWrap.border .panelHead span {
+    font-size: 24px;
+}
+
+.formStyle .formControl, .formStyle .inputGroupAddon {
+    border-color: #000000;
+}
+
+.formStyle .vAsteriskMsg {
+    margin: 15px 20px;
+}
+
+.formStyle .select-style select {
+    height: 34px;
+    padding: 6px 12px;
+    color: #000000;
+}
+
+.formStyle label, .formStyle .form_item_holder label{
+    font-weight: 500;
+    color: #000000;
+}
+.formStyle .fcIcon:after, .socialMediaIcon > li > a, .sp-module .socialMediaIcon > li > a:hover{
+    background-image: url(../images/icon-spriteIthubaMarketingRegister.png);
+}
+
+.heading {
+    position: relative;
+}
+.heading:after {
+    content: '';
+    width: 93px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: #f8db19;
+    display: block;
+}
+.heading .mainLine {
+    font-size: 28px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.heading .subLine {
+    font-size: 20px;
+    line-height: 28px;
+}
+.benefitWrapper {
+    padding-top: 5px;
+}
+.benefitWrapper > ul > li {
+    display: flex;
+    margin: 15px 0;
+}
+.benefitWrapper > ul > li .beneDesc{
+    flex: 1;
+}
+.benefitWrapper > ul > li .icon-wrap{
+    flex-basis: 25px;
+    margin-right: 10px;
+}
+.benefitWrapper > ul > li .icon-wrap .icon{
+    background: url(../images/icon-spriteIthubaMarketingRegister.png) no-repeat 0 -160px;
+    width: 25px;
+    height: 20px;
+    display: block;
+    overflow: hidden;
+}
+.benefitWrapper > ul > li .icon-wrap .icon.singleAccount {background-position: -75px -160px;}
+.benefitWrapper > ul > li .icon-wrap .icon.stayConnected {background-position: 0px -160px;}
+.benefitWrapper > ul > li .icon-wrap .icon.trackAccount {background-position: -25px -160px;}
+.benefitWrapper > ul > li .icon-wrap .icon.fastSecure {background-position: -50px -160px;}
+
+.beneDesc .title {
+    font-size: 15px;
+    font-weight: 700;
+}
+.beneDesc .desc {
+    font-size: 13px;
+}
+
+.formStyle .helpTipModal {
+    width: 250px;
+    right: 0;
+}
+
+.fixed .container.mainWrapper {
+    padding-top: 84px;
+}
+.fixed header {
+    background: none;
+    background-color: rgba(255,255,255,0.98);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width:991px){
+    .logoBox {
+        text-align: center;
+    }
+    .navLinkWrap{
+        justify-content: center;
+    }
+    .partWrapper .leftPart{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .descOuterWrapper{
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+    }
+    .partWrapper .rightPart{
+        max-width: none;
+    }
+}
+@media only screen and (max-width: 767px){
+    .formStyle .formWrap.border fieldset {
+        padding: 0 20px;
+    }
+    .descOuterWrapper{
+        padding: 30px 20px;
+    }
+}
+@media only screen and (max-width: 400px){
+    nav.nav {
+        margin-right: 10px;
+    }
+    .heading .mainLine {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .heading .subLine {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 3px 0;
+    }
+}
+@media only screen and (max-width: 360px){
+    .navLinkWrap{
+        flex-direction: column;
+    }
+    nav.nav{
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

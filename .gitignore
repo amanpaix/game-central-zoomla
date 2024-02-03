@@ -1,0 +1,10 @@
+
+cache/*
+administrator/cache/*
+
+/configuration.php
+/cache
+/administrator
+
+/configuration.php
+

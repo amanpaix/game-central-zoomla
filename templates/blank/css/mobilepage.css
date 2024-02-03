@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'AvenirNextRoundedPro';
+    src: url('../../shaper_helix3/css/fonts/AvenirNextRoundedPro-Med.eot?#iefix') format('embedded-opentype'),  url('../../shaper_helix3/css/fonts/AvenirNextRoundedPro-Med.otf')  format('opentype'),
+           url('../../shaper_helix3/css/fonts/AvenirNextRoundedPro-Med.woff') format('woff'), url('../../shaper_helix3/css/fonts/AvenirNextRoundedPro-Med.ttf')  format('truetype'), url('../../shaper_helix3/css/fonts/AvenirNextRoundedPro-Med.svg#AvenirNextRoundedPro-Med') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNextRoundedPro';
+    src: url('../../shaper_helix3/css/fonts/AvenirNextRoundedPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../../shaper_helix3/css/fonts/AvenirNextRoundedPro-Bold.otf')  format('opentype'),
+           url('../../shaper_helix3/css/fonts/AvenirNextRoundedPro-Bold.woff') format('woff'), url('../../shaper_helix3/css/fonts/AvenirNextRoundedPro-Bold.ttf')  format('truetype'), url('../../shaper_helix3/css/fonts/AvenirNextRoundedPro-Bold.svg#AvenirNextRoundedPro-Bold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{outline: none; box-sizing: border-box;}
+body{
+    font-family: 'AvenirNextRoundedPro', Arial, Helvetica, sans-serif; 
+    font-weight: 500; 
+    letter-spacing: 0.04em; 
+    color: #000000; 
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+strong, b, .boldText{font-weight: 600;}
+ul{list-style: none; margin: 0; padding: 0;}
+.nobreak {
+    white-space: nowrap;
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+}
+
+/* ---------Page styles--------- */
+body{
+    font-size: 21px;
+    line-height: 130%;
+}
+.hTPGameWrap, .wholeWrap {
+    padding: 0 5px;    
+}
+
+
+.hTP-step li, .stepListWrap .stepList {
+    margin: 15px 0;
+    display: flex;
+    word-break: break-word;
+}
+.hTP-step li .stepNo, .stepListWrap .stepList .stepNo{
+    min-width: 90px;
+}
+.bulletList {
+    padding-left: 15px;
+}
+.bulletList li {
+    margin: 9px 0;
+    position: relative;
+}
+.bulletList li:before {
+    content: '-';
+    position: absolute;
+    left: -15px;
+    top: 0;
+}
+
+/* ----faq---- */
+.faqOuterWrap{
+    padding: 0 5px;
+}
+/*
+.panel.panel-default {
+    border-bottom: 1px solid #a4a4a4;
+    
+}*/
+
+.panel-title{
+    line-height: 1.4;
+}
+.panel-collapse.collapse {
+    color: #404040;
+    margin: 0;
+}
+
+.panel-collapse table {
+    border-spacing: inherit;
+    border-bottom: 1px solid #dddddd;
+}
+.panel-collapse .tableTitle {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.lotto .panel-collapse table thead {background-color: #f8db19; color:#000000;}
+.powerball .panel-collapse table thead {background-color: #069edb; color:#ffffff;}
+.dailylotto .panel-collapse table thead {background-color: #ea2336; color:#ffffff;}
+.pick3 .panel-collapse table thead {background-color: #ea2336; color:#ffffff;}
+.sportstake13 .panel-collapse table thead {background-color: #00ac69; color:#ffffff;}
+.raffle .panel-collapse table thead {background-color: #642c83; color:#ffffff;}
+.rapido .panel-collapse table thead {background-color: #231f5e; color:#ffffff;}
+.eaziwin .panel-collapse table thead {background-color: #f68d2d; color:#ffffff;}
+
+.panel-collapse .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: rgba(232, 232, 232, 0.3);
+}
+.panel-collapse table td{
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.aboutUsDetailWrap .imgWrap img{max-width:100%;}
+
+.regionalOfficesWrap {
+    font-size: 12px;
+}
+
+.regionalOffice + .regionalOffice {
+    margin-top: 20px;
+}
+
+.regionalOffice .addressBlock > span {
+    display: block;
+}
+
+.regionalOffice .addressBlock .title {
+    font-weight: 900;
+}
+
+.regionalOfficesDetails .phoneBlock{color:#000000;}
+
+
+#accordion .panel .panel-title {
+    position: relative;
+    padding-left: 12px;
+}
+#accordion .panel .panel-title:before, #accordion .panel .panel-title:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    /*margin-top: -8px;*/
+    background-color: #333333;
+    border-radius: 50%;
+    z-index: 10;
+    font-size: 16px;
+}
+#accordion .panel .panel-title:after {
+    content: '+';
+    background-color: transparent;
+    color: #ffffff;
+    z-index: 20;
+    line-height: 16px;
+    text-align: center;
+}
+#accordion .panel .panel-title[aria-expanded='true']:after {
+    content: '-';
+    line-height: 14px;
+}
+
+#accordion.lotto .panel .panel-title:before{ background-color: #f6d918;}
+#accordion.dailylotto .panel .panel-title:before{ background-color: #e52539;}
+#accordion.pick3 .panel .panel-title:before{ background-color: #e52539;}
+#accordion.powerball .panel .panel-title:before{ background-color: #069edb;}
+#accordion.rapido .panel .panel-title:before{ background-color: #231f5e;}
+#accordion.raffle .panel .panel-title:before{ background-color: #642c83;}
+#accordion.sportstake13 .panel .panel-title:before{ background-color: #00ac69;}
+#accordion.eaziwin .panel .panel-title:before{ background-color: #f68d2d;}
+
+
+
+/*-------eaziwin hot to ----------------*/
+
+.hTP-eaziwin .hTP-Header .imgWrap img {max-width: 44.14%;}
+.tabOptWrap .customTab {display: flex; max-width: 360px; margin: 0 auto;}
+.tabOptWrap .customTab li {flex: 1; text-align: center; padding: 12px 5px; background-color: #f4f4f4; border: 2px solid #cfcfcf;}
+.tabOptWrap .customTab li:first-child {border-radius: 150px 0 0 150px;}
+.tabOptWrap .customTab li:last-child {border-radius: 0 150px 150px 0;}
+.tabOptWrap .customTab li + li {margin-left: -2px;}
+.tabOptWrap .customTab li.active {background-color: #f68d2d; color: #ffffff;}
+.tabBlock {padding-top: 2px;}
+.tabBlock .tabOptWrap {margin-bottom: 15px;}
+.hTP-eaziwin .ew-gameListing {display: flex; flex-wrap: wrap;}
+.hTP-eaziwin .ew-gameListing li {padding: 5px; /*width: 50%;*/}
+.hTP-eaziwin .ew-gameListing li img {max-width: 194px; width: 100%;}
+.page.page2 .itemModule {display: none;}
+.hTPEaziWin-title {color: #e89041; font-weight: 600; font-size: 20px; margin-bottom: 10px; text-align: center;}
+.stepsImgWrap, .hTPEaziWin .htPlay-innerWrap .fl {padding: 0 15px;}
+.hTP-panel .ticketImg img {display: inline; border: 1px solid #000000; margin: 5px 0; width:100%; max-width: 360px;}
+.stepListWrap .stepList .stepDesc a {color: #f78d2d;}
+.stepListWrap .stepList .stepDesc a:hover {text-decoration: underline;}
+.hTP-panelHeading {font-weight: bold; margin-top: 10px; margin-bottom: 10px;}
+.hTP-desc .desc-cap{font-weight: bold;}
+.hTPEaziWin .hTP-panel + .hTP-panel {margin-top: 30px;}
+.disclaimerTxt{font-size: 0.75em;}
+
+.rptTable {width: 100%;}
+.rptTable, th, td {border: 1px solid #ddd; border-collapse: collapse; padding: 5px;}
+.rptTable caption, .rptTable th, .rptTable tfoot td {background-color: #f68b27; color: #fff; padding: 5px; font-weight: 600; /*font-size: 14px;*/}
+/*.rptTable td {font-size: 12px;}*/
+
+
+@media only screen and (min-width: 1024px){
+    body {
+        font-size: 26px;
+    }
+    .hTP-step li .stepNo, .stepListWrap .stepList .stepNo{
+        min-width: 110px;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    body {
+        font-size: 16px;
+    }
+    .hTP-step li .stepNo, .stepListWrap .stepList .stepNo {
+        min-width: 70px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .hTP-eaziwin .ew-gameListing li {width: 25%;}
+}
+@media only screen and (max-width: 800px){
+    .hTP-eaziwin .ew-gameListing li {width: 33.33%;}
+}
+@media only screen and (max-width: 600px){
+    .hTP-eaziwin .ew-gameListing li {width: 50%;}
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <menu>
+        <options var="controller">
+            <option name='Home Page' value="home" msg="Home Page" />
+            <option name='Login' value="login" msg="Player login" />
+            <option name='Registration' value="register" msg="Player Registration" />
+            <option name='After Registration' value="after-register" msg="After Player Registration" />
+            <option name='Forgot Password' value="forgot-password" msg="Forgot Password" />
+            <option name='Log Out' value="logout" msg="Player logout" />
+            <option name='Activation Page' value="activation-page" msg="Activation Page" />
+            <option name='Account Activated' value="account-activated" msg="Account Activated" />
+            <option name='Reset Password' value="reset-password-link" msg="Reset Password" />
+            <option name='Reset Password [Change Password]' value="reset-change-password" msg="Reset Password [Change Password]" />
+            <option name='Reset Password [Password Changed]' value="reset-password-changed" msg="Reset Password [Password Changed]" />
+s
+            <!-- Play Rummy Menu-->
+            <option name="Play Rummy" value="play-rummy" msg="Play Rummy POP-UP" />
+            <option name="Play HTML Rummy" value="play-html-rummy" msg="Play HTML Rummy POP-UP" />
+            <option name="Play Mobile Rummy" value="play-mobile-rummy" msg="Play Mobile Rummy POP-UP" />
+
+            <option name="Play Bingo" value="play-bingo" msg="Play Bingo" />
+            <option name="Bingo Lobby" value="bingo-lobby" msg="Bingo Lobby" />
+            <option name="Pre Buy Bingo Tickets" value="pre-buy" msg="Pre Buy Bingo Tickets" />
+            <!-- Cashier Menus-->
+            <option name="Cashier - Initiate" value="cashier-initiate" msg="Cashier Initiation" />
+            <option name="Cashier - Player Detail" value="player-detail" msg="Cashier - Player detail" />
+            <option name='Cashier - Select amount' value="select-amount" msg="Cashier - Select Amount" />
+            <option name='Cashier Details' value="cashier-details" msg="Player's Cashier details" />
+            <option name='Deposit Response' value="deposit-response" msg="Deposit Response" />
+            <option name='Cashier - Payment Options' value="payment-options" msg="Cashier - Payment Options" />
+            <option name='Cashier - Before Payment' value="before-payment" msg="Cashier - Before Payment" />
+            <option name='Cashier - After Payment Success' value="after-payment-success" msg="Cashier - After Payment Success (Callback URL)" />
+            <option name='Cashier - After Payment Failed' value="after-payment-failed" msg="Cashier - After Payment Failed (Callback URL)" />
+            <!-- My Account Menus-->
+            <option name='My Account' value="my-account" msg="Player's Account" />
+            <option name='My Profile' value="my-profile" msg="Player's Profile" />
+            <option name='Edit My Profile' value="edit-profile" msg="Edit Player's Profile" />
+            <option name='Transaction Details' value="transaction-details" msg="Player's Transaction details" />
+            <option name='Tickets Details' value="ticket-details" msg="Player's Ticket details" />
+            <option name='Wallet Details' value="wallet-details" msg="Player's Wallet details" />
+            <option name='Withdrawal Details' value="withdrawal-details" msg="Player's Withdrawal Details" />
+            <option name='Bonus Details' value="bonus-details" msg="Player's Bonus Details" />
+            <option name='Refer A Friend' value="refer-a-friend" msg="Refer A Friend" />
+            <option name='Change Password' value="change-password" msg="Change Password" />
+            <option name='Inbox' value="inbox" msg="Player's Inbox" />
+            <option name='Balance' value="balance" msg="Player's Balances" />
+            <option name='Edit Avatar' value="edit-avatar" msg="Edit Avatar" />
+            <!-- Withdrawal Menus-->
+            <option name='Withdrawal' value="withdrawal" msg="Money Withdrawal" />
+            <option name='Withdrawal Request' value="withdrawal-request" msg="Money Withdrawal Request" />
+            <option name='Withdrawal Success' value="withdrawal-success" msg="Withdrawal Success" />
+            <option name='Cashier Help' value="cashier-help" msg="Cashier Help" />
+            <option name='Verification Pending' value="verification-pending" msg="Verification Pending" />
+            <!-- Loyalty Menus-->
+            <option name='Loyalty' value="loyalty" msg="Loyalty" />
+            <option name='Loyalty - Redeem' value="loyalty-redeem" msg="Loyalty - Redeem" />
+            <option name='Loyalty - Details' value="loyalty-details" msg="Loyalty - Details" />
+            <!-- Refer a Friend  -->
+            <option name='Gmail Callback' value="gmail-callback" msg="Gmail Callback" />
+            <option name='Facebook Callback' value="facebook-callback" msg="Facebook Callback" />
+            <option name='Yahoo Callback' value="yho-callback" msg="Yahoo Callback" />
+            <option name='Outlook Callback' value="outlook-callback" msg="Outlook Callback" />
+            <option name='Refer a Friend Invite List' value="refer-a-friend-invite-list" msg="Refer a Friend Invite List" />
+            <option name='Refer a Friend Error Page' value="refer-friend-error" msg="Refer a Friend Error Page" />
+            <option name='Refer a Friend Thank you page' value="refer-a-friend-thank-you" msg="Refer a Friend Thank you page" />
+            <option name='Refer a Friend Track Bonus' value="track-bonus" msg="Refer a Friend Track Bonus" />
+            <option name='User Purchased Tickets' value="mytickets" msg="Betting User Purchased Tickets" />
+            <option name='Verification Pending' value="verification-pending" msg="Verification Pending" />
+            <option name='Myaccount Page Rummy' value="myaccount-page-rummy" msg="Myaccount Page Rummy" />
+            <option name='Promotion Page Rummy' value="promotion-page-rummy" msg="Promotion Page Rummy" />
+            <option name='Refer a Friend Page Rummy' value="refer-a-friend-page-rummy" msg="Refer a friend Page Rummy" />
+            <option name='Player Inbox Page Rummy' value="player-inbox-page-rummy" msg="Player Inbox Page Rummy" />
+            <option name='Fetch Email Data' value="fetch-email-data" msg="Fetch Email Data" />
+            <option name='download' value="download" msg="Download APK" />
+            <option name='app-download' value="app-download" msg="App Download APK" />
+            <option name='Deposit' value="deposit" msg="Deposit" />
+            <option name='Iframe Drawgames' value="drawgames_iframe" msg="Drawgames in Iframe" />
+            <option name='Iframe Thai Lottery' value="thailottery_iframe" msg="Thai Lottery in Iframe" />
+            <option name='Iframe Six By forty Two' value="sixbyfortytwo_iframe" msg="Six By forty Two in Iframe" />
+            <option name='Iframe Twelve By Twenty Four' value="twelvebytwentyfour_iframe" msg="Twelve By Twenty Four in Iframe" />
+            <option name='Iframe Sportsbetting' value="sportsBETTING_iframe" msg="Sportsbetting in Iframe" />
+            <option name='Iframe Sportslottery' value="sportslottery_iframe" msg="Sportslottery in Iframe" />
+            <option name='Iframe Instant games' value="instantgames_iframe" msg="Instantgames in Iframe" />
+            <option name='Iframe View Ticket' value="view_ticket_iframe" msg="View Ticket in Iframe" />
+            <option name='Betgames Lobby' value="betgames_lobby" msg="Betgames Lobby" />
+            <option name='Iframe Bingo games' value="bingo_iframe" msg="Bingo in Iframe" />
+
+            <option name='Iframe Evolution games' value="evolution_games" msg="Evolution games" />
+
+            <option name='Instant Win Games' value="instantwingames" msg="Instant Win Games" />
+            <option name='Instant Win Games - Unfinished' value="unfinishedinstantwingames" msg="Instant Win Games - Unfinished" />
+
+            <option name='Update Game List' value="updategamelist" msg="Update Game List" />
+            <option name='Update Game List Mobile' value="updategamelistmobile" msg="Update Game List Mobile" />
+
+            <option name='Sports Lottery Game List' value="sportslottery" msg="Sports Lottery Game List" />
+            <option name='Sports Lottery Match List' value="sportslotterymatchlist" msg="Sports Lottery Match List" />
+
+            <option name='SLOT' value="slot" msg="SLOT" />
+
+            <option name='html-page' value="htmlpage" msg="html-page" />
+            <option name='slot-page' value="slotpage" msg="slot-page" />
+
+            <option name='SLOT - Update Game List' value="slot_updategamelist" msg="SLOT - Update Game List" />
+            <option name='SLOT - Update Game List Mobile' value="slot_updategamelistmobile" msg="SLOT - Update Game List Mobile" />
+            
+
+            <option name='keroninteractive' value="keroninteractive" msg="Keron Interactive" />
+            <option name='goldenrace' value="goldenrace" msg="Golden Race" />
+            <option name='livegames' value="livegames" msg="Live games" />
+
+            <option name='contactus' value="contactus" msg="Contact Us Form" />
+            <option name='momo-response' value="momo-response" msg="MOMO Response" />
+            <option name='server-response' value="server-response" msg="server Response" />
+        </options>
+    </menu>
+</metadata>

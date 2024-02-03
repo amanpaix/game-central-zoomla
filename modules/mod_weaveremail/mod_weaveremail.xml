@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Betting Email Template</name>
+    <author>Tarun Bhati</author>
+    <creationDate>September 13, 2017</creationDate>
+    <version>1.0.0</version>
+    <description>This module allows you to create email templates (internal and external both) for sending to users.</description>
+
+    <files>
+        <filename module="Betting Email Template">mod_Bettingemail.php</filename>
+        <filename>mod_Bettingemail.xml</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+    <!--<customContent />-->
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="from"
+                    type="email"
+                    class="required validate-emailregex"
+                    filter="safehtml"
+                    label="E-mail From:"
+                    validate="email"
+                    description="'Email From' to be shown in email." />
+
+                <field
+                    name="subject"
+                    type="text"
+                    class="required"
+                    filter="safehtml"
+                    label="E-mail Subject:"
+                    description="'Email Subject' to be shown in email." />
+
+                <field
+                    name="email_type"
+                    type="radio"
+                    class="btn-group btn-group-yesno"
+                    label="Email Type"
+                    description="Type of email (Internal / External)."
+                    default="internal">
+                    <option value="internal">Internal</option>
+                    <option value="external">External</option>
+                </field>
+
+				<field
+						name="css_style"
+						type="textarea"
+						label="CSS style"
+						description="CSS Style to include with this module."
+						rows="4"
+				/>
+
+                <field
+                    name="content"
+                    label ="Email Content"
+                    type="editor"
+                    width="300"
+                    filter="raw"
+                    buttons="true"
+                    description="Content of Email."/>
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

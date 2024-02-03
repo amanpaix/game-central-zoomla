@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Registration Widget</name>
+    <author>Tarun Bhati</author>
+    <creationDate>September 13, 2017</creationDate>
+    <version>1.0.0</version>
+    <description>This module allows you to create a registration widget which can be placed in various HTMLs.</description>
+    <!--<customContent />-->
+    <files>
+        <filename module="mod_widgetregistration">mod_widgetregistration.php</filename>
+        <filename>mod_widgetregistration.xml</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                        name="enablePopup"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Show in Popup"
+                        description="To be shown in Popup or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="modalId"
+                        type="text"
+                        filter="safehtml"
+                        label="Modal Id"
+                        description="Modal ID to shown"
+                        showon="enablePopup:1" />
+                />
+                <field
+                        name="modalClass"
+                        type="text"
+                        filter="safehtml"
+                        label="Modal Class"
+                        description="Modal Class to shown"
+                        showon="enablePopup:1" />
+                />
+                <field
+                        name="modalTitle"
+                        type="text"
+                        filter="safehtml"
+                        label="Modal Title"
+                        description="Modal Title to shown"
+                        showon="enablePopup:1" />
+                />
+                <field
+                        name="modalFooter"
+                        type="textarea"
+                        default=""
+                        label="Modal Footerl"
+                        description="Modal Footer to shown"
+                        rows="10"
+                        cols="10"
+                        filter="raw"
+                        showon="enablePopup:1"
+                />
+
+                <field type="spacer" name="spacer1" hr="true" />
+
+                <field
+                        name="css"
+                        type="filelist"
+                        multiple="multiple"
+                        label="Include CSS files"
+                        description="CSS files to be included in this widget"
+                        directory="templates/landing_page/css"
+                        filter=""
+                        exclude=""
+                        stripext="" />
+                <field
+                        name="js"
+                        type="filelist"
+                        multiple="multiple"
+                        label="Include JS files"
+                        description="JS files to be included in this widget"
+                        directory="templates/landing_page/js"
+                        filter=""
+                        exclude=""
+                        stripext="" />
+
+                <field type="spacer" name="spacer2" hr="true" />
+                <field
+                        name="threeFieldReg"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Is Three Field Registration Widget"
+                        description="Show Three Field Registration Widget"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="registrationType"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Registration Type"
+                        description="Registration Type"
+                        default="1">
+                    <option value="1">FULL</option>
+                    <option value="0">MINI</option>
+                </field>
+                <field
+                        name="formtagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Form Class Suffix"
+                        description="Class(s) to apply on form tag" />
+
+                <field type="spacer" name="spacer3" hr="true" />
+                <field
+                        name="enableUsername"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Enable Username"
+                        description="Username Field to be shown or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="usernametagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Username Class Suffix"
+                        description="Class(s) to apply on username input field tag"
+                        showon="enableUsername:1"
+                />
+                <field
+                        name="usernamelabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Username label"
+                        description="Label to show with username field"
+                        showon="enableUsername:1"
+                />
+                <field
+                        name="usernameplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="Username Placeholder"
+                        description="Placeholder to show with username field"
+                        showon="enableUsername:1"
+                />
+
+                <field type="spacer" name="spacer4" hr="true" />
+                <field
+                        name="enableName"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Enable Name"
+                        description="Name field to be shown or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="fnameclass"
+                        type="text"
+                        filter="safehtml"
+                        label="User First Name Class Suffix"
+                        description="Class(s) to apply on firstname input field tag"
+                        showon="enableName:1"
+                />
+                <field
+                        name="fnamelabel"
+                        type="text"
+                        filter="safehtml"
+                        label="First Name label"
+                        description="Label to show with firstname field"
+                        showon="enableName:1"
+                />
+                <field
+                        name="fnameplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="Firest Name Placeholder"
+                        description="Placeholder to show with firstname field"
+                        showon="enableName:1"
+                />
+                <field
+                        name="snameclass"
+                        type="text"
+                        filter="safehtml"
+                        label="User Surname Class Suffix"
+                        description="Class(s) to apply on surnamename input field tag"
+                        showon="enableName:1"
+                />
+                <field
+                        name="snamelabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Surname label"
+                        description="Label to show with surnamename field"
+                        showon="enableName:1"
+                />
+                <field
+                        name="snameplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="Surname Placeholder"
+                        description="Placeholder to show with surnamename field"
+                        showon="enableName:1"
+                />
+
+                <field type="spacer" name="spacer5" hr="true" />
+                <field
+                        name="mobiletagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Mobile Class Suffix"
+                        description="Class(s) to apply on mobile input field tag" />
+                <field
+                        name="mobilelabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Mobile label"
+                        description="Label to show with mobile field" />
+                <field
+                        name="mobileplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="Mobile Placeholder"
+                        description="Placeholder to show with mobile field" />
+
+                <field type="spacer" name="spacer6" hr="true" />
+                <field
+                        name="enableRSA"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Enable RSA"
+                        description="RSA Field to be shown or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="rsatagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="RSA Class Suffix"
+                        description="Class(s) to apply on RSA input field tag"
+                        showon="enableRSA:1"
+                />
+
+                <field
+                        name="rsalabel"
+                        type="text"
+                        filter="safehtml"
+                        label="RSA label"
+                        description="Label to show with rsa field"
+                        showon="enableRSA:1"
+                />
+                <field
+                        name="rsaplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="RSA Placeholder"
+                        description="Placeholder to show with RSA field"
+                        showon="enableRSA:1"
+                />
+
+                <field type="spacer" name="spacer7" hr="true" />
+
+                <field
+                        name="enableDOB"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Enable DOB"
+                        description="DOB Field to be shown or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="dobtagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="DOB Class Suffix"
+                        description="Class(s) to apply on DOB input field tag"
+                        showon="enableDOB:1"
+                />
+                <field
+                        name="doblabel"
+                        type="text"
+                        filter="safehtml"
+                        label="DOB label"
+                        description="Label to show with DOB field"
+                        showon="enableDOB:1"
+                />
+                <field
+                        name="dobplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="DOB Placeholder"
+                        description="Placeholder to show with DOB field"
+                        showon="enableDOB:1"
+                />
+                <field type="spacer" name="spacer8" hr="true" />
+                <field
+                        name="emailtagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Email Class Suffix"
+                        description="Class(s) to apply on email input field tag" />
+                <field
+                        name="emaillabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Email label"
+                        description="Label to show with email field" />
+                <field
+                        name="emailplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="Email Placeholder"
+                        description="Placeholder to show with email field" />
+                <field
+                        name="AutoEmail"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        label="Email Suggestion"
+                        description="Show Email Suggestions."
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field type="spacer" name="spacer8" hr="true" />
+                <field
+                        name="passwordtagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Password Class Suffix"
+                        description="Class(s) to apply on password input field tag" />
+                <field
+                        name="passwordlabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Password label"
+                        description="Label to show with password field" />
+                <field
+                        name="passwordplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="Password Placeholder"
+                        description="Placeholder to show with password field" />
+                <field
+                        name="enableConfirmpassword"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Enable Confirm Password"
+                        description="Confirm Password Field to be shown or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="confirmpasswordtagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Confirm Password Class Suffix"
+                        description="Class(s) to apply on confirm password input field tag"
+                        showon="enableConfirmpassword:1"
+                />
+                <field
+                        name="confirmpasswordlabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Confirm Password label"
+                        description="Label to show with confirm password field"
+                        showon="enableConfirmpassword:1"
+                />
+                <field
+                        name="confirmpasswordplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="Confirm Password Placeholder"
+                        description="Placeholder to show with confirm password field"
+                        showon="enableConfirmpassword:1"
+                />
+
+                <field type="spacer" name="spacer9" hr="true" />
+                <field
+                        name="enableRefertype"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Enable Refer Type"
+                        description="Refer Type Field to be shown or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="refertypetagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Refer type Class Suffix"
+                        description="Class(s) to apply on refer type input field tag"
+                        showon="enableRefertype:1"
+                />
+                <field
+                        name="refertypelabel"
+                        type="text"
+                        class="refertype_1"
+                        filter="safehtml"
+                        label="Refer Type label"
+                        description="Label to show with Refer Type field"
+                        showon="enableRefertype:1" />
+                <field
+                        name="showrefercode"
+                        type="radio"
+                        class="btn-group btn-group-yesno referCode"
+                        label="Show Refer Code"
+                        description="Show Refer Code field in this widget."
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="refercodelabel"
+                        type="text"
+                        class="refercode_1"
+                        filter="safehtml"
+                        label="Refer Code label"
+                        description="Label to show with Refer Code field"
+                        showon="showrefercode:1" />
+                <field
+                        name="refercodetagclass"
+                        type="text"
+                        filter="safehtml"
+                        class="refercode_1"
+                        label="Refer Code Class Suffix"
+                        description="Class(s) to apply on Refer Code input field tag"
+                        showon="showrefercode:1" />
+                <field
+                        name="refercodeplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="Refer Code Placeholder"
+                        description="Placeholder to show with Refer Code field"
+                        showon="showrefercode:1" />
+
+                <field type="spacer" name="spacer10" hr="true" />
+                <field
+                        name="enableEmailmarkt"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Enable Email Marketing Type"
+                        description="Email Marketing Field to be shown or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="emailmarkttagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Email Marketing Class Suffix"
+                        description="Class(s) to apply on email marketing input field tag"
+                        showon="enableEmailmarkt:1"
+                />
+                <field
+                        name="emailmarktlabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Email Marketing Label"
+                        description="Label to show with Email Marketing field"
+                        showon="enableEmailmarkt:1" />
+                <field
+                        name="enableSMSmarkt"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Enable SMS Marketing Type"
+                        description="Email SMS Field to be shown or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="smsmarktagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="SMS Marketing Class Suffix"
+                        description="Class(s) to apply on smsmarketing input field tag"
+                        showon="enableSMSmarkt:1"
+                />
+                <field
+                        name="smsmarktlabel"
+                        type="text"
+                        filter="safehtml"
+                        label="SMS Marketing Label"
+                        description="Label to show with SMS Marketing field"
+                        showon="enableSMSmarkt:1"
+                />
+
+                <field type="spacer" name="spacer11" hr="true" />
+                <field
+                        name="currency"
+                        type="radio"
+                        class="btn-group btn-group-yesno state"
+                        label="Show Currency"
+                        description="Show Currency field in this widget."
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="currencylabel"
+                        type="text"
+                        class="currency_1"
+                        filter="safehtml"
+                        label="Currency label"
+                        description="Label to show with Currency field"
+                        showon="currency:1"
+                />
+                <field
+                        name="currencytagclass"
+                        type="text"
+                        filter="safehtml"
+                        class="currency_1"
+                        label="Currency Class Suffix"
+                        description="Class(s) to apply on currency input field tag"
+                        showon="currency:1"
+                />
+
+                <field type="spacer" name="spacer12" hr="true" />
+                <field
+                        name="state"
+                        type="radio"
+                        class="btn-group btn-group-yesno state"
+                        label="Show state"
+                        description="Show state field in this widget."
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="statelabel"
+                        type="text"
+                        class="state_1"
+                        filter="safehtml"
+                        label="State label"
+                        description="Label to show with state field"
+                        showon="state:1"
+                />
+                <field
+                        name="statetagclass"
+                        type="text"
+                        filter="safehtml"
+                        class="state_1"
+                        label="State Class Suffix"
+                        description="Class(s) to apply on state input field tag"
+                        showon="state:1"
+
+                />
+
+                <field type="spacer" name="spacer13" hr="true" />
+                <field
+                        name="submitbtnclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Submit Button Class Suffix"
+                        description="Class(s) to apply on submit button" />
+                <field
+                        name="submitlabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Submit label"
+                        description="Text to show on submit button." />
+                <field
+                        name="textonsumbmitbtn"
+                        type="text"
+                        filter="safehtml"
+                        label="Line Above Submit Button"
+                        description="Text to show above submit button." />
+
+                <field
+                        name="submiturl"
+                        type="menuitem"
+                        disable="separator"
+                        label="Submit Url"
+                        description="The page where the player will be redirected on successful registration." >
+                    <option
+                            value="">JDEFAULT</option>
+                </field>
+
+                <field type="spacer" name="spacer14" hr="true" />
+                <field
+                        name="OtpEnable"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        label="Enable Registration OTP"
+                        description="Show Registration OTP."
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="validationstyle"
+                       type="list"
+                       default=""
+                       label="Validation Style"
+                       description="Tooltip error style.">
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                    <option value="bottom">Bottom</option>
+                </field>
+                <field
+                        name="enableBanner"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        label="Enable Side Banner"
+                        description="Enable Side Banner."
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="bannerPosition"
+                        type="moduleposition"
+                        description="Side Banner Position"
+                        label="Side Banner Position"
+                        default=""
+                        maxlength="50"
+                        showon="enableBanner:1"/>
+                <field
+                        name="enableRecapcha"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Enable Recaptcha"
+                        description="Recaptcha Field to be shown or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                />
+
+                <field
+                        name="moduleclass_sfx"
+                        type="textarea"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                        rows="3"
+                />
+
+                <field
+                        name="cache"
+                        type="list"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC"
+                        default="1"
+                >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                        name="cache_time"
+                        type="text"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+                        default="900"
+                />
+
+                <field
+                        name="cachemode"
+                        type="hidden"
+                        default="static"
+                >
+                    <option value="static"></option>
+                </field>
+
+
+            </fieldset>
+
+
+
+        </fields>
+    </config>
+</extension>

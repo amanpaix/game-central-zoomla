@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-color: #1a3141;
+    color: #ffffff;
+    position: static;
+}
+.afIWGgameOuterWrap {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.pmsHeader h3{
+	font-size: 20px;
+    letter-spacing: 0.05em;
+	margin: 0;
+    padding: 10px 15px;
+}
+.pmsHeader {
+    flex: 0 0 44px;
+}
+.contDiv {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    flex: 1 0 100%;
+}
+
+.contDiv form {
+    flex: 0 0 210px;
+    margin-bottom: 50px;
+}
+
+.contDiv form .pms_button {
+    background: #bf090f;
+    background: -moz-linear-gradient(top, #FF8B8B 3%, #EA2D34 6%, #bf090f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #FF8B8B), color-stop(6%, #EA2D34), color-stop(100%, #bf090f));
+    background: -webkit-linear-gradient(top, #FF8B8B 3%, #EA2D34 6%, #bf090f 100%);
+    background: -o-linear-gradient(top, #FF8B8B 3%, #EA2D34 6%, #bf090f 100%);
+    background: -ms-linear-gradient(top, #FF8B8B 3%, #EA2D34 6%, #bf090f 100%);
+    background: linear-gradient(to bottom, #FF8B8B 3%, #EA2D34 6%, #bf090f 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FF8B8B', endColorstr='#bf090f', GradientType=0);
+    border: 1px solid #C20C12;
+    outline: none;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 4px;
+    height: 36px;
+}
+
+.contDiv form label {
+    font-size: 12px;
+    margin: 0;
+}

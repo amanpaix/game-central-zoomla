@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="section1" label="Section1">
+        <field
+            type="text"
+            name="panelHeading"
+            label="Enter Heading"
+            description="Enter Heading to be show in tabs or accordian"
+            default=""
+            size="50"           
+        />
+        <field
+            type="text"
+            name="panelIcon"
+            label="Enter Icon Class"
+            description="EnterIcon Class to be added"
+            default=""
+            size="20"           
+        />
+        <field
+            type="text"
+            name="panelHeadingClass"
+            label="Enter Heading class"
+            description="Enter Heading class to be put in tabs or accordian"
+            default=""
+            size="10"           
+        />
+        <field 
+            name="panelContent" 
+            type="editor" 
+            label="Enter Content"
+            description=""
+            filter="raw" 
+        />        
+    </fieldset>
+</form>

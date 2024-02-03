@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>mod_customapp</name>
+    <author>Joomla! Project</author>
+    <creationDate>July 2004</creationDate>
+    <copyright>Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>admin@joomla.org</authorEmail>
+    <authorUrl>www.joomla.org</authorUrl>
+    <version>3.0.0</version>
+    <description>Custom Module for Mobile Apps</description>
+    <files>
+        <filename module="mod_customapp">mod_customapp.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="Module">  
+                <field name="HOME"
+                       type="repeatable"
+                       id="list_home_screen"
+                       icon="list"
+                       description="Home Screen"
+                       label="Home Screen"
+                       default='{"template":["Layout"],
+                            "location":["layout1.html"],
+                            "description":["HTMLLayout"]}'>
+                    <fieldset hidden="true" name="list_templates_modal" repeat="true">
+                        <field
+                            type="media"
+                            name="imageItem"
+                            label="Select Image"
+                            description="Image to be seen in popup app"
+                            directory="mobileapp"
+                            preview="true"
+                            preview_width="100"
+                        />
+                        <field
+                            name="title"
+                            type="textarea"
+                            label="Game title"
+                            description="Game title."
+                            rows="4"
+                        />
+                        <field 
+                            name="gameCode" 
+                            type="list" 
+                            default="" 
+                            label="Game Code"
+                            description="Enter game code"            
+                        >
+                            <!--<option value="">Please Select</option>-->
+                            <option value="BETGAMES">BETGAMES</option>
+                            <option value="EVOLUTION">EVOLUTION</option>>
+                            <option value="OTHERS">Others</option>
+                        </field> 
+                    </fieldset>
+                </field> 
+
+            </fieldset>
+        </fields>   
+    </config>
+</extension>

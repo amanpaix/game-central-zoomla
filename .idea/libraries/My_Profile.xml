@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="My Profile">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/templates/shaper_helix3/images/my_account/avatar/My Profile.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

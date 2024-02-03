@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="casinoportal">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/InstantWinGames.zip!/" />
+      <root url="jar://$PROJECT_DIR$/portal_07022022.zip!/" />
+      <root url="jar://$PROJECT_DIR$/InstantWinGames.13052021.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Login Widget</name>
+    <author>Tarun Bhati</author>
+    <creationDate>September 13, 2017</creationDate>
+    <version>1.0.0</version>
+    <description>This module allows you to create a login widget which can be placed in various HTMLs.</description>
+    <!--<customContent />-->
+    <files>
+        <filename module="mod_widgetlogin">mod_widgetlogin.php</filename>
+        <filename>mod_widgetlogin.xml</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">                
+                <field
+                        name="enablePopup"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Show in Popup"
+                        description="To be shown in Popup or not"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="modalId"
+                        type="text"
+                        filter="safehtml"
+                        label="Modal Id"
+                        description="Modal ID to shown" 
+                        showon="enablePopup:1" />
+                />
+                <field
+                        name="modalClass"
+                        type="text"
+                        filter="safehtml"
+                        label="Modal Class"
+                        description="Modal Class to shown" 
+                        showon="enablePopup:1" />
+                />
+                <field
+                        name="modalTitle"
+                        type="text"
+                        filter="safehtml"
+                        label="Modal Title"
+                        description="Modal Title to shown" 
+                        showon="enablePopup:1" />
+                />
+                <field 
+                    name="modalFooter" 
+                    type="textarea" 
+                    default="" 
+                    label="Modal Footerl"
+                    description="Modal Footer to shown"
+                    rows="10
+                    " cols="10" 
+                    filter="raw"
+                    showon="enablePopup:1"
+                />
+                
+                <field type="spacer" name="spacer1" hr="true" />
+                
+                <field
+                        name="formlegend"
+                        type="text"
+                        filter="safehtml"
+                        label="Form Legend"
+                        description="Form Legend to show" 
+                />
+                <field
+                        name="formtagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Form Class Name"
+                        description="Class(s) to apply on form tag" 
+                />                
+
+                <field type="spacer" name="spacer2" hr="true" />
+                
+                <field
+                        name="usernamelabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Username label"
+                        description="Label to show with username field" 
+                />
+                <field
+                        name="usernameplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="Username Placeholder"
+                        description="Placeholder to show with username field" 
+                />
+
+                <field type="spacer" name="spacer3" hr="true" />
+                
+                <field
+                        name="passwordlabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Password label"
+                        description="Label to show with password field" 
+                />
+                <field
+                        name="passwordplaceholder"
+                        type="text"
+                        filter="safehtml"
+                        label="Password Placeholder"
+                        description="Placeholder to show with password field" 
+                />
+                
+                <field type="spacer" name="spacer4" hr="true" />
+                
+                <field
+                        name="forgot_password"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        label="Show Forgot Password"
+                        description="Whether to show forgot password option in this widget."
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="forgotpasswordlabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Forgot Password text"
+                        description="Text to show on forgot password link." 
+                        showon="forgot_password:1" 
+                />
+                <field
+                        name="forgotpassworddesc"
+                        type="text"
+                        filter="safehtml"
+                        label="Forgot Password description"
+                        description="Description to show on forgot password link."
+                        showon="forgot_password:1"  
+                />
+                <field
+                        name="forgotpassword_type"
+                        type="radio"
+                        default="0"
+                        label="Forgot password Type"
+                        description=""
+                        class="btn-group btn-group-yesno"
+                        showon="forgot_password:1"
+                >
+                    <option value="1">Popup</option>
+                    <option value="0">URL</option>
+                </field>
+                <field
+                        name="forgoturl"
+                        type="menuitem"
+                        disable="separator"
+                        label="Forgot password Url"
+                        description="The Forgot password page where the player will be redirected." 
+                        showon="forgotpassword_type:0" 
+                >
+                    <option value="">JDEFAULT</option>
+                </field>  
+                <field
+                        name="forgotpasswordmodal"
+                        type="text"
+                        disable="separator"
+                        label="Forgot password Modal"
+                        description="The forgotpassword Modal That display."
+                        showon="forgotpassword_type:1"
+                >
+                </field>                
+                
+                <field type="spacer" name="spacer5" hr="true" />
+                
+                 <field
+                        name="submitlabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Login Text"
+                        description="Text to show on submit button." 
+                />
+                <field
+                        name="submiturl"
+                        type="menuitem"
+                        disable="separator"
+                        label="Login Url"
+                        description="The page where the player will be redirected on successful login."
+                >
+                    <option value="">JDEFAULT</option>
+                </field>
+                               
+                <field type="spacer" name="spacer6" hr="true" />
+                
+                <field
+                        name="enableRegister"
+                        type="radio"
+                        default="0"
+                        label="Show Register button"
+                        description=""
+                        class="btn-group btn-group-yesno"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field
+                        name="register_type"
+                        type="radio"
+                        default="0"
+                        label="Register Type"
+                        description=""
+                        class="btn-group btn-group-yesno"
+                        showon="enableRegister:1"
+                >
+                    <option value="1">Popup</option>
+                    <option value="0">URL</option>
+                </field>
+
+                <field
+                        name="registerlabel"
+                        type="text"
+                        filter="safehtml"
+                        label="Register Text"
+                        description="Text to show on register button."
+                        showon="enableRegister:1"
+                />
+                <field
+                        name="registerurl"
+                        type="menuitem"
+                        disable="separator"
+                        label="Register Url"
+                        description="The register page where the player will be redirected." 
+                        showon="register_type:0"
+                >
+                    <option value="">JDEFAULT</option>
+                </field>
+
+                <field
+                        name="registermodal"
+                        type="text"
+                        disable="separator"
+                        label="Register Modal"
+                        description="The register Modal That display."
+                        showon="register_type:1"
+                >                    
+                </field>
+                
+                <field type="spacer" name="spacer7" hr="true" />
+                
+                <field
+                        name="css"
+                        type="filelist"
+                        multiple="multiple"
+                        label="Include CSS files"
+                        description="CSS files to be included in this widget"
+                        directory="templates/landing_page/css"
+                        filter=""
+                        exclude=""
+                        stripext="" 
+                />
+                <field
+                        name="js"
+                        type="filelist"
+                        multiple="multiple"
+                        label="Include JS files"
+                        description="JS files to be included in this widget"
+                        directory="templates/landing_page/js"
+                        filter=""
+                        exclude=""
+                        stripext="" 
+                />
+                
+<!--                <field type="spacer" name="spacer7" hr="true" />
+                                
+                <field
+                        name="forgotpasswordclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Forgot Pass. Link Class Suffix"
+                        description="Class(s) to apply on forgot password link." 
+                        showon="forgot_password:1" 
+                />  
+                <field
+                        name="usernametagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Username Class Suffix"
+                        description="Class(s) to apply on username input field tag" 
+                />
+                <field
+                        name="passwordtagclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Password Class Suffix"
+                        description="Class(s) to apply on password input field tag" 
+                />
+                <field
+                        name="submitbtnclass"
+                        type="text"
+                        filter="safehtml"
+                        label="Submit Button Class Suffix"
+                        description="Class(s) to apply on submit button" 
+                />
+                <field
+                    name="registeclass"
+                    type="text"
+                    filter="safehtml"
+                    label="Register. Link Class Suffix"
+                    description="Class(s) to apply on Register link."
+                    showon="enableRegister:1" 
+                /> -->
+                <field name="validationstyle"
+                       type="list"
+                       default=""
+                       label="Validation Style"
+                       description="Tooltip error style."
+                    >
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                    <option value="bottom">Bottom</option>
+                </field>
+                <!--
+                <field name="contenttype"
+                       type="radio"
+                       class="btn-group btn-group-yesno contenttype"
+                       default="static"
+                       label="Content type"
+                       description="To do on click of forgot password link.">
+                    <option value="static">Static Page</option>
+                    <option value="widget">Widget</option>
+                </field>
+                <field
+                        name="contenttype_static"
+                        type="menuitem"
+                        class="contenttype contenttype_static"
+                        disable="separator"
+                        label="Pages"
+                        description="The page where the player will be redirected on click of forgot password link." >
+                </field>
+                <field
+                        name="contenttype_widget"
+                        type="sql"
+                        class="contenttype contenttype_widget"
+                        default="1"
+                        label="Select a widget"
+                        query="select id, title, position from #__modules where module='mod_widgetforgotpass' and published='1'"
+                        description="The page where the player will be redirected on click of forgot password link."
+                        key_field="position"
+                        value_field="title"
+                />
+                <field
+                        name="position"
+                        type="sql"
+                        label="Position"
+                        disabled="disabled"
+                        description="Mention position of this widget as mentioned here."
+                        query="select position from #__modules where module='mod_widgetlogin '" 
+                />                       
+                <field name="field_ordering"
+                       type="list"
+                       multiple="multiple"
+                       default=""
+                       label="Fields Ordering"
+                       description="Order in which fields will be displayed.">
+                    <option value="userName">User Name</option>
+                    <option value="password">Password</option>
+                    <option value="login_btn">Login Button</option>
+                    <option value="fp_link">Forgot Password Link (if shown)</option>
+                </field>
+                <field
+                        name="is_popup"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        label="Show in popup"
+                        description="Whether to show this widget in pop up."
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>-->
+
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                        name="tag_id"
+                        type="text"
+                        label="MOD_MENU_FIELD_TAG_ID_LABEL"
+                        description="MOD_MENU_FIELD_TAG_ID_DESC"
+                />
+
+                <field
+                        name="class_sfx"
+                        type="text"
+                        label="MOD_MENU_FIELD_CLASS_LABEL"
+                        description="MOD_MENU_FIELD_CLASS_DESC"
+                />
+
+                <field
+                        name="window_open"
+                        type="text"
+                        label="MOD_MENU_FIELD_TARGET_LABEL"
+                        description="MOD_MENU_FIELD_TARGET_DESC"
+                />
+
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                />
+
+                <field
+                        name="moduleclass_sfx"
+                        type="textarea"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                        rows="3"
+                />
+
+                <field
+                        name="cache"
+                        type="list"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC"
+                        default="1"
+                        filter="integer"
+                >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                        name="cache_time"
+                        type="number"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+                        default="900"
+                        filter="integer"
+                />
+
+                <field
+                        name="cachemode"
+                        type="hidden"
+                        default="itemid"
+                >
+                    <option value="itemid"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
+
+
+
+
+                
+                
+                

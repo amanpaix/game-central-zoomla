@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="section1" label="Section1">
+        <field
+            type="media"
+            name="imageItem"
+            label="Select Image"
+            description="Select Image to be seen in slider"
+            directory="customslider"
+            preview="true"
+            preview_width="100"
+            preview_height="100"
+        />
+        <field
+            type="text"
+            name="imageTitle"
+            label="Image Title"
+            description="Enter Image Title to be shown in slider"
+            default=""
+            size="10"           
+        />
+        <field
+            type="textarea"
+            name="imageDesc"
+            label="Image Description"
+            description="Enter Image description to be shown in slider"
+            default=""
+            rows="5"
+            cols="10" 
+            filter="raw"           
+        />
+        <field 
+            name="subImagediv" 
+            type="text" 
+            label="Custom class name" 
+            description="Enter class name Image"
+            size="10" 
+        />
+        <field 
+            name="enableCorner" 
+            type="list" 
+            default="0" 
+            label="Enable Corner Labels" 
+            description="Want to show corner label" 
+            class="advancedSelect"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field 
+            name="cornerClass" 
+            type="text" 
+            label="Corner Class" 
+            description="Enter class name for Corner label"
+            showon="enableCorner:1" 
+            size="10" 
+        />
+        <field 
+            name="showButton" 
+            type="list" 
+            default="0" 
+            label="Enable Buttons" 
+            description="Want to show Buttons" 
+            class="advancedSelect"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field 
+            name="buttonLabel" 
+            type="text" 
+            default="" 
+            hint="View More"
+            label="Button 1 Label" 
+            description="Enter Label to be shown in button 1" 
+            size="10" 
+            showon="showButton:1" 
+        /> 
+        <field 
+            name="anchorMenu" 
+            type="menuitem"
+            default="" 
+            label="Select a menu item" 
+            description="Select a menu item to be link with Button 1"
+            showon="showButton:1" 
+        >
+            <option value=""></option>
+        </field>
+        <field 
+            name="buttonLabel2" 
+            type="text" 
+            default="" 
+            hint="Play More"
+            label="Button 2 Label" 
+            description="Enter Label to be shown in button 2" 
+            size="10" 
+            showon="showButton:1" 
+        /> 
+        <field 
+            name="anchorMenu2" 
+            type="menuitem"
+            default="" 
+            label="Select a menu item" 
+            description="Select a menu item to be link with Button 2"
+            showon="showButton:1" 
+        >
+            <option value=""></option>
+        </field>
+        <field 
+            name="showTimer" 
+            type="list" 
+            default="0" 
+            label="Enable Timer" 
+            description="Want to show timer (Only for games)" 
+            class="advancedSelect"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field 
+            name="gameCode" 
+            type="text" 
+            default="" 
+            label="Game Code" 
+            description="Enter game code to show it's timer" 
+            size="10" 
+            showon="showTimer:1" 
+        /> 
+    </fieldset>
+</form>

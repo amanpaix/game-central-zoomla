@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="section1" label="Section1">
+        <field
+            type="media"
+            name="imageItem"
+            label="Select Image"
+            description="Image to be seen in popup app"
+            directory="popupapp"
+            preview="true"
+            preview_width="100"
+        />
+
+        <field
+                name="title"
+                type="textarea"
+                label="Game title"
+                description="Game title."
+                rows="4"
+        />
+
+        <field 
+            name="gameCode" 
+            type="list" 
+            default="" 
+            label="Game Code"
+            description="Enter game code"            
+        >
+            <option value="">Please Select</option>
+            <option value="BETGAMES">BETGAMES</option>
+            <option value="EVOLUTION">EVOLUTION</option>>
+        </field>            
+    </fieldset>
+</form>

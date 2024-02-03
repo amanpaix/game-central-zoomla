@@ -1,0 +1,556 @@
+/* Reset CSS Start*/
+/* line 2, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* line 4, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 5, ../sass/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 6, ../sass/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 7, ../sass/_reset.scss */
+a {
+  text-decoration: none; }
+
+/* line 8, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 9, ../sass/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 10, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 11, ../sass/_reset.scss */
+::-moz-selection {
+  color: inherit;
+  background-color: transparent; }
+
+/* line 12, ../sass/_reset.scss */
+::selection {
+  color: inherit;
+  background-color: transparent; }
+
+/* Reset CSS End*/
+/*font family*/
+/*color*/
+/* line 6, ../sass/iwg.scss */
+html, body {
+  position: relative;
+  height: 100%; }
+
+/* line 7, ../sass/iwg.scss */
+body {
+  font-family: "Oswald", "sans-serif";
+  background-color: #eeeeee;
+  font-weight: 500;
+  color: #444444; }
+
+/* line 10, ../sass/iwg.scss */
+.bodyWrapper, body {
+  position: relative;
+  font-size: 16px; }
+
+/* line 11, ../sass/iwg.scss */
+.bodyWrapper {
+  padding-bottom: 30px; }
+
+/* line 13, ../sass/iwg.scss */
+.fl {
+  float: left; }
+
+/* line 14, ../sass/iwg.scss */
+.fr {
+  float: right; }
+
+/* line 15, ../sass/iwg.scss */
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* line 16, ../sass/iwg.scss */
+.img-responsive {
+  max-width: 100%; }
+
+/* line 19, ../sass/iwg.scss */
+.bannerTop {
+  display: -webkit-flex;
+  display: flex; }
+  /* line 22, ../sass/iwg.scss */
+  .bannerTop .colLeft {
+    display: -webkit-flex;
+    display: flex;
+    flex-basis: 55%;
+    align-items: flex-start;
+    overflow: hidden; }
+  /* line 23, ../sass/iwg.scss */
+  .bannerTop .colLeft img {
+    width: 100%; }
+  /* line 24, ../sass/iwg.scss */
+  .bannerTop .colRight {
+    display: -webkit-flex;
+    display: flex;
+    flex-basis: 45%;
+    flex-wrap: wrap; }
+  /* line 27, ../sass/iwg.scss */
+  .bannerTop .colRightRow {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%; }
+  /* line 28, ../sass/iwg.scss */
+  .bannerTop .bannerThumb {
+    display: -webkit-flex;
+    display: flex;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-bottom: 10px; }
+  /* line 29, ../sass/iwg.scss */
+  .bannerTop .colLeft img {
+    border-radius: 4px; }
+  /* line 30, ../sass/iwg.scss */
+  .bannerTop .colRightRow:last-child .bannerThumb {
+    margin-bottom: 0px; }
+  /* line 32, ../sass/iwg.scss */
+  .bannerTop .flex-direction-nav a:before {
+    color: rgba(255, 255, 255, 0.8); }
+  /* line 33, ../sass/iwg.scss */
+  .bannerTop .flexslider {
+    margin: 0px;
+    border: 0px; }
+  /* line 34, ../sass/iwg.scss */
+  .bannerTop .flex-control-nav {
+    bottom: 10px;
+    z-index: 99; }
+  /* line 35, ../sass/iwg.scss */
+  .bannerTop .flex-control-paging li a {
+    cursor: pointer;
+    background-color: #fff; }
+  /* line 36, ../sass/iwg.scss */
+  .bannerTop .flex-control-paging li a.flex-active {
+    background-color: #ffe45f;
+    background: #ffe45f; }
+
+/* line 50, ../sass/iwg.scss */
+.gameNav {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #38393e;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid #38393e; }
+  /* line 58, ../sass/iwg.scss */
+  .gameNav ul {
+    display: -webkit-flex;
+    display: flex;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
+  /* line 59, ../sass/iwg.scss */
+  .gameNav li {
+    -webkit-flex: 1 0 108px;
+    flex: 1 0 108px;
+    text-align: center;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+  /* line 60, ../sass/iwg.scss */
+  .gameNav li + li {
+    border-left: 2px solid #222327; }
+  /* line 61, ../sass/iwg.scss */
+  .gameNav a {
+    display: -webkit-flex;
+    display: flex;
+    padding: 15px 0px;
+    font-size: 16px;
+    color: #f9f9f9;
+    border-top: 3px solid transparent;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer; }
+  /* line 62, ../sass/iwg.scss */
+  .gameNav li:hover {
+    background-color: #575756; }
+  /* line 65, ../sass/iwg.scss */
+  .gameNav .allGame a {
+    border-color: #a51010; }
+  /* line 66, ../sass/iwg.scss */
+  .gameNav .instantGame a {
+    border-color: #f08c1d; }
+  /* line 67, ../sass/iwg.scss */
+  .gameNav .popularGame a {
+    border-color: #8dc73f; }
+  /* line 68, ../sass/iwg.scss */
+  .gameNav .scratchGame a {
+    border-color: #0065a5; }
+  /* line 69, ../sass/iwg.scss */
+  .gameNav .skillGame a {
+    border-color: #7b2b82; }
+  /* line 71, ../sass/iwg.scss */
+  .gameNav .allGame.active {
+    background-color: #a51010; }
+  /* line 72, ../sass/iwg.scss */
+  .gameNav .instantGame.active {
+    background-color: #f08c1d; }
+  /* line 73, ../sass/iwg.scss */
+  .gameNav .popularGame.active {
+    background-color: #8dc73f; }
+  /* line 74, ../sass/iwg.scss */
+  .gameNav .scratchGame.active {
+    background-color: #0065a5; }
+  /* line 75, ../sass/iwg.scss */
+  .gameNav .skillGame.active {
+    background-color: #7b2b82; }
+
+/* line 90, ../sass/iwg.scss */
+.gameListingWrap {
+  overflow: hidden;
+  margin: 0 -5px;
+  padding: 0 5px; }
+
+/* line 96, ../sass/iwg.scss */
+.gameListing {
+  margin-left: -10px;
+  margin-right: -10px; }
+  /* line 100, ../sass/iwg.scss */
+  .gameListing img {
+    height: 100%;
+    width: 100%; }
+  /* line 105, ../sass/iwg.scss */
+  .gameListing figcaption {
+    margin: 5px 0px 15px; }
+  /* line 109, ../sass/iwg.scss */
+  .gameListing .cell.filtr-item {
+    width: 16.66%;
+    padding: 10px; }
+  /* line 114, ../sass/iwg.scss */
+  .gameListing .grid-item {
+    width: 16.66%;
+    padding: 10px; }
+
+/* line 126, ../sass/iwg.scss */
+.cell .cellInnerWrap {
+  padding: 5px;
+  background-color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.16);
+  width: 100%; }
+
+/* line 136, ../sass/iwg.scss */
+.gameName {
+  font-size: 14px;
+  color: #00579c;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em; }
+
+/* line 144, ../sass/iwg.scss */
+.gamePrice {
+  color: #444444;
+  font-size: 12px; }
+
+/* line 149, ../sass/iwg.scss */
+.gamePrice span {
+  font-size: 9px; }
+
+/* line 170, ../sass/iwg.scss */
+.gameDetailsBgWrap {
+  width: 100%;
+  /*height: 702px;*/
+  height: 100vh;
+  position: relative; }
+  /* line 175, ../sass/iwg.scss */
+  .gameDetailsBgWrap .gameDetailsBgInner {
+    background-color: #000e17;	  
+    background-image: url(../images/gameDetailsBannerBg.jpg);
+	background-repeat: no-repeat;  
+	background-position:center center;  
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  /* line 185, ../sass/iwg.scss */
+  .gameDetailsBgWrap .gamePlayArea {
+    box-shadow: 0px 0px 66.2px 3.8px rgba(0, 0, 0, 0.65);
+  /*  max-width: 600px;
+    max-height: 470px; */
+    padding: 4px 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px; }
+  /* line 194, ../sass/iwg.scss */
+  .gameDetailsBgWrap .quickLink {
+    position: absolute;
+    background: url(../images/home-icon.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 10px;
+    background-color: #eef0e7;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4); }
+    /* line 205, ../sass/iwg.scss */
+    .gameDetailsBgWrap .quickLink a {
+      display: block;
+      height: 100%;
+      text-indent: -9999999px; }
+  /* line 212, ../sass/iwg.scss */
+  .gameDetailsBgWrap .quickLink:hover {
+    background-color: #aad7ea; }
+  /* line 216, ../sass/iwg.scss */
+  .gameDetailsBgWrap .gamePlayArea-bottom {
+    text-align: center;
+    position: absolute;
+    bottom: 50px; }
+  /* line 222, ../sass/iwg.scss */
+  .gameDetailsBgWrap .gamePlayArea-bottom button {
+    display: inline-block; }
+  /* line 226, ../sass/iwg.scss */
+  .gameDetailsBgWrap .gamePlayArea-top div {
+    color: #444444;
+    font-size: 13px;
+    padding-bottom: 5px; }
+  /* line 232, ../sass/iwg.scss */
+  .gameDetailsBgWrap .playBtn {
+    background: #defe5f;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #defe5f 0%, #d5f74c 23%, #c1e821 50%, #7e9d00 77%, #7e9d00 77%, #4f6200 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #defe5f 0%, #d5f74c 23%, #c1e821 50%, #7e9d00 77%, #7e9d00 77%, #4f6200 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #defe5f 0%, #d5f74c 23%, #c1e821 50%, #7e9d00 77%, #7e9d00 77%, #4f6200 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#defe5f', endColorstr='#4f6200',GradientType=0 );
+    /* IE6-9 */
+    color: #344000;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 3px solid #516401;
+    border-radius: 20px;
+    cursor: pointer;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+  /* line 252, ../sass/iwg.scss */
+  .gameDetailsBgWrap .playBtn:hover {
+    background: #defe5f;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #defe5f 0%, #d5f74c 23%, #c1e821 50%, #9cc10c 76%, #9cc10c 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #defe5f 0%, #d5f74c 23%, #c1e821 50%, #9cc10c 76%, #9cc10c 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #defe5f 0%, #d5f74c 23%, #c1e821 50%, #9cc10c 76%, #9cc10c 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#defe5f', endColorstr='#9cc10c',GradientType=0 );
+    /* IE6-9 */ }
+  /* line 260, ../sass/iwg.scss */
+  .gameDetailsBgWrap .playBtn:focus {
+    outline: none; }
+
+/* line 276, ../sass/iwg.scss */
+.gameDetailsWrap .gameDetailsInnerWrap .gameDesc {
+  padding-bottom: 10px; }
+/* line 278, ../sass/iwg.scss */
+.gameDetailsWrap .tab-content {
+  display: none !important;
+  background: #ededed; }
+/* line 283, ../sass/iwg.scss */
+.gameDetailsWrap .tab-content.active {
+  display: flex !important;
+  position: relative;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+/* line 300, ../sass/iwg.scss */
+.gameDetailsInnerWrap {
+  padding: 20px 30px 0px 30px;
+  text-align: center;
+  color: #444444; }
+  /* line 305, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .gameDesc {
+    padding-bottom: 30px; }
+    /* line 307, ../sass/iwg.scss */
+    .gameDetailsInnerWrap .gameDesc h1 {
+      margin-bottom: 20px;
+      color: #00579c;
+      font-size: 22px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      font-weight: 400; }
+    /* line 308, ../sass/iwg.scss */
+    .gameDetailsInnerWrap .gameDesc p {
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 14px;
+      line-height: 20px; }
+  /* line 311, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .suggestedGameCat h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 25px;
+    position: relative; }
+  /* line 312, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .suggestedGameCat h2:before, .gameDetailsInnerWrap .suggestedGameCat h2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 5px;
+    border: 1px solid #d6d6d6;
+    z-index: -1; }
+  /* line 313, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .suggestedGameCat h2:after {
+    top: 6px;
+    border: 1px solid #ffffff; }
+  /* line 314, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .suggestedGameCat h2 span {
+    background-color: #eeeeee;
+    padding: 0px 10px;
+    display: inline-block; }
+  /* line 316, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .cell {
+    text-align: left;
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: none; }
+  /* line 317, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .figcaption {
+    margin-bottom: 0px; }
+  /* line 318, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .gameName {
+    margin-left: 5px; }
+  /* line 319, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .gameListing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px; }
+  /* line 320, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .cell .cellInnerWrap {
+    padding: 5px;
+    background-color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.16);
+    width: 100%; }
+  /* line 329, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .cell {
+    width: 100%;
+    max-width: 198.167px; }
+  /* line 330, ../sass/iwg.scss */
+  .gameDetailsInnerWrap figcaption {
+    margin: 5px 0px 15px; }
+
+/* line 336, ../sass/iwg.scss */
+.owl-carousel {
+  position: relative; }
+
+/* line 342, ../sass/iwg.scss */
+.gameSlider2 .owl-nav.disabled + .owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 10px; }
+
+/* line 350, ../sass/iwg.scss */
+.owl-stage-outer {
+  border-radius: 4px; }
+
+/* line 355, ../sass/iwg.scss */
+.gameSlider1 .owl-dots.disabled, .gameSlider1 .owl-nav.disabled {
+  display: block;
+  position: absolute;
+  top: 30%;
+  width: 100%; }
+/* line 362, ../sass/iwg.scss */
+.gameSlider1 .owl-nav [class*=owl-] {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0; }
+/* line 373, ../sass/iwg.scss */
+.gameSlider1 .owl-prev {
+  position: absolute;
+  left: 20px; }
+/* line 378, ../sass/iwg.scss */
+.gameSlider1 .owl-next {
+  position: absolute;
+  right: 20px; }
+/* line 383, ../sass/iwg.scss */
+.gameSlider1 .owl-nav [class*=owl-]:hover {
+  background: #000; }
+
+/*media query*/
+@media only screen and (max-width: 991px) {
+  /* line 392, ../sass/iwg.scss */
+  .gameListing .cell {
+    width: 25%; }
+
+  /* line 393, ../sass/iwg.scss */
+  .gameDetailsInnerWrap .cell {
+    max-width: 100% !important; }
+
+  /* line 394, ../sass/iwg.scss */
+  .gameSlider1 .owl-prev, .gameSlider1 .owl-next {
+    top: 30%; } }
+@media only screen and (max-width: 767px) {
+  /* line 399, ../sass/iwg.scss */
+  .gameNav ul {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+  /* line 400, ../sass/iwg.scss */
+  .gameNav ul li.active {
+    -webkit-order: 1;
+    order: 1;
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%; }
+
+  /* line 401, ../sass/iwg.scss */
+  .gameListing .cell {
+    width: 33.33%; }
+
+  /* line 403, ../sass/iwg.scss */
+  .gameSlider1 .owl-carousel .owl-item {
+    display: flex !important;
+    justify-content: center !important; } }
+@media only screen and (max-width: 479px) {
+  /* line 409, ../sass/iwg.scss */
+  .gameListing .cell {
+    width: 50%; } }
+@media only screen and (max-width: 320px) {
+  /* line 414, ../sass/iwg.scss */
+  .gameListing .cell {
+    width: 100%; } }

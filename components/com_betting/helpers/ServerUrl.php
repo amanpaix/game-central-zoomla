@@ -1,0 +1,127 @@
+<?php
+defined('_JEXEC') or die("<h1 style='color: red'>This is a restricted area. Will You mind going somewhere else.</h1>");
+
+class ServerUrl {
+
+    const BASE_URL = "http://13.127.80.74:8081/";
+
+    const BINGO_API = "http://43.205.141.6:8080/";
+    const RAM_BASE = "http://13.127.80.74:8081/";
+    const COMM_ENGINE = "http://13.127.80.74:8084/";
+    const TXN_ENGINE = "http://13.127.80.74:8081/";
+    const TEST_BASE_URL = "http://13.127.80.74:8081/";
+    const CASHIER_SUBMIT_URL = "http://13.127.80.74:8082/";
+    const CASHIER_BASE_URL = "http://13.127.80.74:8082/";
+    const SERVER_PATH = "v1.0/";
+    const COMM_ENGINE_PATH = "client/";
+    const RAM_SERVER_PATH = "";
+    const CASHIER_SERVER_PATH = 'player/payment/';
+    const IMAGE_UPLOAD = "";
+    const PLAYER_LOGIN = self::SERVER_PATH . "playerLogin";
+
+    const BINGO_ACTIVE_ROOMS = "bingo/room/fetch/activeRooms";
+    const PLAYER_LOGOUT = "postLogin/logout";
+    const CHECK_LOGIN = "postLogin/checkLogin";
+    const PLAYER_REGISTRATION = self::SERVER_PATH . "playerRegistration";
+    const PLAYER_REGISTRATION_NEW = self::SERVER_PATH . "v1/playerRegistration";
+    const PLAYER_PARTIAL_REGISTRATION = self::SERVER_PATH . "partialRegistration";
+    const FORGOT_PASSWORD = "postLogin/forgotPassword";
+    const CHECK_AVAILABILITY = self::SERVER_PATH . "checkAvailability";
+    //ram path
+    const RAM_PRELOGIN_SEND_OTP = self::RAM_SERVER_PATH . "preLogin/sendRegOtp";
+    const RAM_REGISTRATION = self::RAM_SERVER_PATH . "preLogin/registerPlayer";
+    const RAM_REGISTRATION_WITH_OTP = self::RAM_SERVER_PATH . "preLogin/registerPlayerWithOtp";
+    const RAM_LOGIN = self::RAM_SERVER_PATH . "preLogin/playerLogin";
+    const RAM_PLAYER_PROFILE = self::RAM_SERVER_PATH . "postLogin/playerProfile";
+    const RAM_UDATE_PLAYER_PROFILE = self::RAM_SERVER_PATH . "postLogin/overallUpdatePlayerProfile";
+    const RAM_SEND_EMAIL_VERICATION_CODE = self::RAM_SERVER_PATH . "postLogin/sendVerficationEmailLink";
+    const RAM_VERIFY_EMAIL_OTP = self::RAM_SERVER_PATH . "postLogin/verifyEmailWithOtp";
+    
+    const SAVE_SITE_OFFLINE = self::SERVER_PATH . "site/maintain";
+    const PLAYER_PROFILE = self::SERVER_PATH . "playerProfile";
+    const EDIT_AVATAR = self::SERVER_PATH . "editAvatar";
+    const DEPOSIT_STATUS = self::SERVER_PATH . "txn/depositTxnStatus";
+    const CASHIER_DEPOSIT_STATUS = self::CASHIER_SERVER_PATH . "transactionDetails";
+    const ADD_REDEEM_ACCOUNT = self::SERVER_PATH . "momo/add/redeem/acc";
+    const ADD_CASHIER_REDEEM_ACCOUNT = self::CASHIER_SERVER_PATH . "accounts/add";
+    const DEPOSIT_REQUEST = self::SERVER_PATH . "momo/mtn/deposit";
+    const FETCH_REDEEM_ACCOUNT = self::SERVER_PATH . "momo/fetchRedeemAcc";
+    const CASHIER_REDEEM_ACCOUNT = self::CASHIER_SERVER_PATH . "accounts/fetch";
+    const UPDATE_PLAYER_PROFILE = self::SERVER_PATH . "updatePlayerProfile";
+    const PLAYER_INBOX = self::COMM_ENGINE_PATH . "playerInbox";
+    const CHANGE_PASSWORD = "postLogin/change/Password";
+    const GET_BALANCE = self::SERVER_PATH . "getBalance";
+    const SEND_VERIFICATION_CODE = self::SERVER_PATH . "sendVerificationCode";
+    const VERIFY_PLAYER = self::SERVER_PATH . "verifyPlayer";
+    const INBOX_ACTIVITY = self::COMM_ENGINE_PATH . "inboxActivity";
+    const UPLOAD_AVATAR = "preLogin/uploadAvatar";
+    const UPLOAD_PLAYER_DOCUMENT = self::SERVER_PATH . "uploadPlayerDocument";
+    const UPLOAD_PLAYER_DOCUMENT_NEW = self::SERVER_PATH . "uploadPlrDocument";
+    const FETCH_DEPOSIT_BONUS = self::SERVER_PATH . "fetchDepositBonus";
+    const BONUS_DETAILS = self::SERVER_PATH . "bonusDetails";
+    const TRANSACTION_DETAILS = "txn/transactionDetail";
+    const TRANSACTION_TICKET_DETAILS = "txn/ticketDetails";
+    const WITHDRAWAL_DETAILS = self::SERVER_PATH . "withdrawalDetails";
+    const TICKET_DETAILS = "txn/ticketDetail";
+
+    const UPDATE_PRACTICE_BAL = "txn/practice/wallet/update";
+    const GET_COMMON_DATA = self::SERVER_PATH . "getCommonData";
+    const INVITE_FRIEND = self::SERVER_PATH . "inviteFriend";
+    const PAYMENT_OPTIONS = self::CASHIER_SERVER_PATH . "options";
+    const OFFLINE_DEPOSIT_REQUEST = self::SERVER_PATH . "offlineDepositRequest";
+    const ONLINE_DEPOSIT_REQUEST = "betting/portal/cashier/depositRequest";
+    const CASHIER_DEPOSIT_REQUEST = "player/payment/depositRequest";
+    const WITHDRAWAL_REQUEST = self::SERVER_PATH . "withdrawalRequest";
+    const WITHDRAWAL_REQUEST_MOMO = self::SERVER_PATH . "momo/mtn/withdrawal";
+    const CASHIER_WITHDRAWAL_REQUEST = self::CASHIER_SERVER_PATH . "withdrawalRequest";
+    const SEND_OTP = self::SERVER_PATH . "sendOTP";
+    const CANCEL_WITHDRAWAL = self::SERVER_PATH . "cancelWithdrawal";
+    const WINNERS_LIST = self::SERVER_PATH . "winnersList";
+    const PROMO_CODE_LIST = self::SERVER_PATH . "promoCodeList";
+    const VALIDATE_PROMO_CODE = self::SERVER_PATH . "validatePromoCode";
+    const PREPARE_CAMPAIGN_TREKKING = self::SERVER_PATH . "prepareCampaignTracking";
+    const EMAIL_VERIFY = self::SERVER_PATH . "accountActivationLink";
+    const ONLINE_DETAIL = self::SERVER_PATH . "onlineDetail";
+    const RESET_PASSWORD_LINK = self::SERVER_PATH . "resetPasswordLink";
+    const RESET_PASSWORD = "postLogin/resetPassword";
+    const POST_LOGIN_DATA = self::SERVER_PATH . "getPostLoginData";
+    const FETCH_CITY_LIST = self::SERVER_PATH . "fetchCityList";
+    const FETCH_HEADER_INFO = "postLogin/fetchHeaderInfo";
+    const ENCODE_DECODE_API = self::SERVER_PATH . "encodeDecodeApi";
+    const LOYAL_PLAYER_DETAIL = self::SERVER_PATH . "loyalPlayerDetail";
+    const LOYALTY_REDEEM_PAGE = self::SERVER_PATH . "redeemPage";
+    const LOYALTY_GET_CASH = self::SERVER_PATH . "getCash";
+    const LOYALTY_BUY_MERCHANDISE = self::SERVER_PATH . "buyMerchandise";
+    const LOYALTY_PACKET_STATEMENT = self::SERVER_PATH . "packetStatement";
+    const REFER_A_FRIEND = self::SERVER_PATH . "inviteFriend";
+    const REFER_A_FRIEND_TRACK_BONUS = self::SERVER_PATH . "plrTrackReferBonus";
+    const REFER_A_FRIEND_REMINDER = self::SERVER_PATH . "notificationToPlayer";
+    const RETAILER_LOGIN = self::SERVER_PATH . "change/password/detail";
+    const IS_DEPOSIT_PROCESSABLE = self::SERVER_PATH . "isDepositProcess";
+    const SEND_APP_LINK = self::SERVER_PATH . "sendAppLink";
+    const REGISTRATION_OTP = self::SERVER_PATH . "registrationOTP";
+    const IGEWEB = Configuration::DOMAIN . "/html5/index.php/";    
+    const FETCH_GAME_DATA = "/services/tpDataMgmt/fetchGameData";
+    const PURCHASE_TICKET = "/services/tpPlayMgmt/purchaseTicket";
+    const IGE_GET_GAME_LIST = "getGameList.action";
+    const IGE_GAMEPLAY = "loadPortalGame.action";
+    const SLOT_GAMEPLAY = "loadGame.action";
+    const IGE_GAMEPLAY_MOBILE_BUY = "Gameplay/playforcash";
+    const IGE_GAMEPLAY_MOBILE_TRY = "Gameplay/playforfree";
+    const IGE_UNFINISHED_GAME_LIST = "unFinishedGameList.action";
+    const IGE_GAMEPLAY_UNFINISHED_MOBILE = "Gameplay/playforunfinished";
+    const IGE_GAMEPLAY_UNFINISHED = "loadUnfinishGame.action";
+    const FETCH_SLE_DRAW_DATA = "/rest/dataMgmt/fetchSLEDrawData";
+    const SLE_PURCHASE_TICKET = "/rest/playMgmt/purchaseTicket";
+    const FETCH_SLE_MATCHLIST = "/rest/dataMgmt/fetchSLEMatchListData";
+    const SLOT_GET_GAME_LIST = "/getGameListData.action";
+    const FETCH_SBE_GAME_DATA = "/dataManagement/web/fetchSportsAndTournamentData";
+    const FETCH_SBE_MATCH_BET_MARKETS_DATA = "/dataManagement/web/fetchEventDetails";
+    const SBE_PURCHASE_TICKET = "/betManagement/web/betSale";
+    const CONTACT_US =  "postLogin/contactUS";
+    const FREE_CASH_BONUS = self::SERVER_PATH . "giveFreeCashBonus";
+    const GET_PLAYER_CURRENCY = self::SERVER_PATH . "getPlayerCurrency";
+    const IGE_PATH = array(
+        "IGE" => Configuration::DOMAIN . "/InstantWinGames/index.php"
+    );
+}

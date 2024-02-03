@@ -1,0 +1,1 @@
+var JCaption=function(c){};

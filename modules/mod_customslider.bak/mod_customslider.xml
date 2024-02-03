@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="install">
+    <name>Custom Slider !</name>
+    <author>Anil Rawat</author>
+    <version>1.0.0</version>
+    <description>A simple slider module for images.</description>
+    <files>
+        <folder>assets</folder>
+        <folder>form</folder>
+        <filename>mod_customslider.xml</filename>
+        <filename module="mod_customslider">mod_customslider.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <scriptfile>script.php</scriptfile>
+    <config>
+        <fields name="params" >
+            <fieldset name="basic">                
+                <field 
+                    name="sliderSize" 
+                    type="radio" 
+                    default="1" 
+                    label="Select an option" 
+                    description="Size of slider to show" 
+                    class="btn-group"
+                >
+                    <option value="1">Small</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Big</option>
+                </field>
+                <field 
+                    name="sliderType" 
+                    type="radio" 
+                    default="1" 
+                    label="Select an option" 
+                    description="Type of slider to show" 
+                    class="btn-group"
+                >
+                    <option value="1">Single</option>
+                    <option value="2">Multiple</option>
+                    <option value="3">Center</option>
+                    <option value="4">Lazy Load</option>
+                    <option value="5">Autoplay</option>
+                </field>
+                <field 
+                    name="slidesToshow" 
+                    type="integer" 
+                    default="2" 
+                    label="No. of images to show" 
+                    description="Image number to be show"
+                    first="2" 
+                    last="5" 
+                    step="1"
+                    showon="sliderType!:1[AND]sliderType!:3" 
+                />    
+                <field 
+                    name="slidesToshowcenter" 
+                    type="integer" 
+                    default="1" 
+                    label="No. of images to show" 
+                    description="Image number to be show"
+                    first="1" 
+                    last="5" 
+                    step="1"
+                    showon="sliderType:3" 
+                /> 
+                <field 
+                    name="slidesToscroll" 
+                    type="integer" 
+                    default="1" 
+                    label="No. of slides for scroll" 
+                    description="Slide number to scroll"
+                    first="1" 
+                    last="5" 
+                    step="1"
+                    showon="sliderType!:1" 
+                />  
+                <field 
+                    name="autoplaySpeed" 
+                    type="integer" 
+                    default="1000" 
+                    label="Autoplay speed" 
+                    description="Time to autoplay"
+                    first="1000" 
+                    last="5000" 
+                    step="1000"
+                    showon="sliderType:5" 
+                />
+                <field 
+                    name="imageList" 
+                    type="subform"
+                    formsource="modules/mod_customslider/form/imageForm.xml"
+                    label="Select images" 
+                    description="Image List Selectiom" 
+                    multiple="true"
+                    min="1"
+                    max="10"
+                    layout="joomla.form.field.subform.repeatable"
+                /> 
+            </fieldset>
+        </fields>
+    </config>
+</extension>

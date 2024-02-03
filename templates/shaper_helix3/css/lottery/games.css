@@ -1,0 +1,2886 @@
+*::selection {
+    /* color: inherit; */
+    background: transparent;
+}
+.ticket-left{padding-left: 20px; float: left; margin-bottom:5px;}
+.ticket-right{padding-right: 20px; float: right; margin-bottom:5px;}
+
+.ticket-left b,.ticket-left strong{padding-left: 10px;}
+.ticket-right b,.ticket-right strong{padding-right: 10px;}
+
+
+.ticket>div>h3 {
+    text-transform:uppercase;
+}
+
+
+.ticket-d>div>h3 {
+    text-transform:uppercase;
+}
+
+
+.ticket-hr-dotted {
+    width:94%;
+    height:0px;
+    border: 1px dashed #A2A2A2;
+    background-color:transparent;
+}
+
+
+
+.ticketPriceBlock > div > span {
+    display: block;
+    font-size: 24px;
+}
+.ticketPriceBlock > div > span#tktPrice{ font-size:32px;}
+.ticketPriceBlock > div:first-child > span:first-child {
+    font-size: 11px;
+}
+.ticketPriceBlock > div.valNums > span {
+    display: inline-block;
+}
+.ticketPriceBlock > div.valNums {
+    font-size: 32px;
+    color: #606060;
+    font-weight: 300;
+    padding: 0 0 0 20px;
+}
+.ticketPriceBlock > div {
+    vertical-align: top;
+}
+.ticketPriceBlock {
+    padding: 2px 0;
+    min-height: 30px;
+}
+
+.ticket-hr {
+    width:100%;
+    height:1px;
+    background-color:#a2a2a2;
+}
+.moreBetNamesWrap {
+    width: 100%;
+    overflow: visible !important
+}
+.moreBetNamesWrap {
+    margin-top: 30px;
+    position: relative;
+}
+.moreGameNamesWrap, .moreBetNamesWrap{ display:none;}
+.gameName .dateTime, .btn .titWrap .mainTit,  .btn .titWrap .subTit {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+}
+.pageSeprator {
+    background: none;
+    padding: 0;
+    display: block;
+    min-height: 2px;
+    width: 100%;
+	border-top: 1px solid rgba(0,0,0,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+#gameSelectionType {
+    padding-bottom: 25px;
+    /* margin-top: 25px;*/
+    position: relative;
+}
+#gameSelectionType > div {
+    float: left;
+}
+#gameSelectionType .moreGameNamesWrap {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    overflow: visible !important
+}
+#gameSelectionType .moreGameNames {
+    float: right;
+    width: 100%;
+    border: 1px solid #bebebe;
+    background-color: #fff;
+    padding: 15px;
+    overflow: hidden;
+    max-height: 230px;
+    overflow-y: scroll;
+	border-radius: 4px;
+}
+#gameSelectionType .gameHeadBox {
+    display: block;
+    clear: both;
+}
+#gameSelectionType .gameNameWrap .title,  #gameSelectionType .betNameWrap .title {
+    color: #FFFFFF;
+    display: block;
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 300;
+    /*text-transform: uppercase;*/
+    margin-bottom: 6px;
+    line-height: 100%;
+}
+#gameSelectionType .gameNameWrap .gameNameInnerWrap, #gameSelectionType .betNameWrap .betNameInnerWrap, #gameSelectionType .gameNameWrap .gameNameInnerWrap > div, #gameSelectionType .betNameWrap .betNameInnerWrap > div {
+    display: inline-block;
+    vertical-align: middle;
+    /*text-transform: uppercase;*/
+    font-weight: 500;
+}
+#gameSelectionType .btn {
+    background-color: #3d2a71;
+    color: #fff;
+    padding: 0;
+    height: 40px;
+    overflow: hidden;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+
+#gameSelectionType .gameNameInnerWrap:hover .btn, #gameSelectionType .betNameInnerWrap:hover .btn{
+    background-color: #573F95;
+}
+
+#gameSelectionType .gameNameInnerWrap:hover .gameName, #gameSelectionType .betNameInnerWrap:hover .betName{
+    color: #FFFFFF;
+}
+#gameSelectionType .moreGameNames > .row {
+    margin-bottom: 24px;
+}
+
+#gameSelectionType .moreGameNames .gameNameWrap, #gameSelectionType .moreGameNames .gameNameWrap .gameName {
+    color: #09495D;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+#gameSelectionType .moreGameNames .gameNameWrap.selected, #gameSelectionType .moreGameNames .gameNameWrap:hover, #gameSelectionType .moreGameNames .gameNameWrap.selected .gameName, #gameSelectionType .moreGameNames .gameNameWrap:hover .gameName{
+    color:#1697A7;
+}
+#gameSelectionType .moreGameNamesWrap:before,#gameSelectionType .moreTournmentNamesWrap:before ,#gameSelectionType .moreTournmentStageNamesWrap:before,#gameSelectionType .moreEventsNamesWrap:before {
+    position: absolute;
+    content: '';
+    background: url(/images/arrowWhite.png) no-repeat left top;
+    top: -19px;
+    left: 25%;
+    margin-left: -10px;
+    width: 20px;
+    display: block;
+    background-color: transparent;
+    height: 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#gameSelectionType .moreTournmentNamesWrap:before {
+	left:15%;
+}
+
+
+#gameSelectionType .moreTournmentStageNamesWrap:before {
+	left: 50%;
+}
+
+#gameSelectionType .moreEventsNamesWrap:before {
+	left: auto;
+	right: 15%;
+}
+
+#gameSelectionType > .gameNameWrap {
+    padding: 4px 0;
+    /* padding-right: 26px; */
+    border-right: 1px solid rgba(0,0,0,0.15);
+}
+
+#gameSelectionType > .betNameWrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 4px 0;
+    /* padding-left: 26px; */
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+#gameSelectionType .moreBetNames {
+    float: right;
+    width: 100%;
+    border: 1px solid #bebebe;
+    background-color: #fff;
+    padding: 15px 15px 0 15px;
+    overflow: hidden;
+    position: relative;
+	border-radius: 4px;
+}
+#gameSelectionType .moreBetNamesWrap:before {
+     position: absolute;
+     content: '';
+     background: url(/images/arrowWhite.png) no-repeat left top;
+     top: -19px;
+     left: 75%;
+     margin-left: -10px;
+     width: 20px;
+     display: block;
+     background-color: transparent;
+     height: 20px;
+     z-index: 1;
+     overflow: hidden;
+ }
+#gameSelectionType .gameNameWrap .gameNameInnerWrap, #gameSelectionType .betNameWrap .betNameInnerWrap{
+    overflow: hidden;
+    width: 311px;
+    height: 47px;
+    border: 1px solid #2E909C;
+    background-color:#2E909C;
+    border-radius: 3px;
+    padding: 0px 12px;
+    display: table;
+    position: relative;
+    cursor: pointer;
+    color: #FFFFFF;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+	-moz-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+	border:none;
+}
+#gameSelectionType .gameNameWrap .gameNameInnerWrap:hover, #gameSelectionType .betNameWrap .betNameInnerWrap:hover{
+    color:#ffffff;
+    background-color:#132A2F;
+	border-color: #49879A;
+}
+#gameSelectionType .gameNameWrap .gameNameInnerWrap:after, #gameSelectionType .betNameWrap .betNameInnerWrap:after{
+    content: '\f107';
+    font-family: FontAwesome;
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+    position: absolute;
+    right: 7px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#gameSelectionType .gameNameWrap .gameNameInnerWrap > div, #gameSelectionType .betNameWrap .betNameInnerWrap > div {
+    display:table-cell;
+    vertical-align:middle;
+}
+.selectedNumberDisplayArea {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 23px 20px 25px 20px;
+}
+
+.selectedNumberDisplayArea > span {
+    display: block;
+    padding: 5px 0;
+    line-height: 100%;
+}
+
+.selectedNumberDisplayArea > div {
+    display: inline-block;
+}
+.selectedNumberDisplayArea > div {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #7accc8;
+    border-radius: 4px;
+    padding: 2px;
+    margin: 5px;
+    cursor: pointer;
+}
+.selectedNumberDisplayArea > div.selected {
+    background-color: transparent;
+    border: 1px solid #447573;
+}
+.selectedNumberDisplay ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.selectedNumberDisplay ul li:empty{
+    background-color: transparent;
+    border: 1px solid #2C4148;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.selectedNumberDisplay ul li.fill{
+    border: 1px solid #bebebe;
+    background-color:#fff;
+}
+
+.selectedNumberDisplay ul li.selected{
+    border: 1px solid #584096;
+    background-color:#574095;
+    color:white;
+}
+
+.selectedNumberDisplay ul li.pms_button_bl_display {
+    background-color: #ED3237 !important;
+    position: relative;
+    border: none !important;
+    color: #ffffff !important;
+    /*font-weight: 600;
+    font-size: 16px;*/
+    z-index: 5;
+}
+
+.selectedNumberDisplay ul li.pms_button_bl_display:before {
+    position: absolute;
+    content: '\f005';
+    font-family: FontAwesome;
+    color: #D20000;
+    left: 0;
+    font-size: 30px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+}
+.selectedNumberDisplay ul li {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #57dfdd;
+    background-color: #57dfdd;
+    color: #102f33;
+    -moz-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+    border-radius: 50%;
+    text-align: center;
+    margin: 2px;
+    vertical-align: middle;
+    line-height: 31px;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.selectedNumberDisplay ul li.lineNo {
+    border: 1px solid #192F35;
+    background-color: #192F35;
+    color: #fff;
+}
+.moreGameNames .gameNameWrap .icon i.fa:before {
+    content: '\f096';
+}
+.moreGameNames .gameNameWrap.selected .icon i.fa:before {
+    content: '\f046';
+}
+.controlNavigation {
+    content: '\f046';
+}
+.controlNavigation {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 500;
+    /*text-transform: uppercase;*/
+}
+.controlNavigation > div{
+    display:inline-block;
+    cursor:pointer;
+    padding: 6px 0;
+    color:#1DB3BB;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.controlNavigation > div:hover, .controlNavigation > div.selected{
+    color:#22D4DE;
+}
+
+.controlNavigation .icon i.fa:before {
+    content: '\f096';
+}
+
+.controlNavigation .selected .icon i.fa:before {
+    content: '\f046';
+}
+
+.controlNavigation .icon {
+    vertical-align: middle;
+}
+
+.gameNameWrap, .betNameWrap, .gameName, .betName {
+    display: inline-block;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.gameNameWrap, .betNameWrap, .gameName, .betName {
+    display: inline-block;
+    vertical-align: middle;
+}
+.gameName, .betName {
+    color: #fff;
+    font-size: 16px;
+    line-height: 110%;
+    cursor: pointer;
+}
+
+.numOfSelects  .outputLine2 {
+    padding: 25px 0;
+}
+.outputLine2 { padding-bottom:50px;
+}
+.inBlk > span, .inBlk > div{ display:inline-block; vertical-align:middle; text-align: left; line-height: 105%;}
+
+.outputLine1 > div , .outputLine2 > div {
+    text-align: center;
+    /*text-transform: uppercase;*/
+    color: #fff;
+}
+
+.numOfSelects .valNums, .numOfLines .valNums  {
+    font-size: 32px;
+    font-weight: 300;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.outputLine1 > .col-md-6, .numOfSelects, .numOfLines {
+    min-height: 44px;
+}
+.numOfSelects, .numOfLines {
+    padding:2px 0;
+}
+.outputLine1 > .col-md-6:first-child, .outputLine2 > .col-md-6:first-child, .outputLine1 > .col-sm-6:first-child, .outputLine2 > .col-sm-6:first-child{
+    border-right: 1px solid rgba(0,0,0,0.15);
+}
+.outputLine1 > .col-md-6:last-child, .outputLine2 > .col-md-6:last-child, .outputLine1 > .col-sm-6:last-child, .outputLine2 > .col-sm-6:last-child {
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+.numOfSelects {
+    border-right: 1px solid rgba(0,0,0,0.15);
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+.numOfSelects:first-child{ border-left:none;}
+.numOfSelects:last-child{ border-right:none;}
+.numOfLines {
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+.quickPickPlayingWrap > div, .numberActionBox span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.numberActionBox span.minus i.fa:before {
+    content: '\f056';
+}
+
+.numberActionBox span.plus i.fa:before {
+    content: '\f055';
+}
+
+.numberActionBox span i.fa:before{
+    display: inline-block;
+    font-size: 28px;
+    color: #2E909C;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.numberActionBox span:hover i.fa:before{
+    color:#F1BA3E;
+}
+.numberActionBox > span {
+    min-width: 40px;
+    text-indent: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.numberActionBox > span .fa-fw{width: auto;}
+
+.numberActionBox .displayTextBox {
+    min-width: 80px;
+    border: 1px solid #d8c5a1;
+    min-height: 40px;
+    border-radius: 3px;
+    background-color: transparent;
+    line-height: 40px;
+    text-align:center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.numberActionBox .displayTextBox.unaction{
+    font-size: 32px;
+    font-weight: 300;
+    min-width: auto;
+    padding: 0 10px;
+    border: none;
+    background-color: transparent;
+    cursor: default;
+}
+
+.ticketPriceBlock > div > span {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+}
+.ticketPriceBlock > div > span#tktPrice{ font-size:32px;}
+.ticketPriceBlock > div:first-child > span:first-child {
+    font-size: 11px;
+    line-height: 11px;
+}
+.ticketPriceBlock > div.valNums > span {
+    display: inline-block;
+}
+.ticketPriceBlock > div.valNums {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 300;
+    padding: 0 0 0 20px;
+}
+.ticketPriceBlock > div {
+    vertical-align: top;
+}
+.ticketPriceBlock {
+    padding: 2px 0;
+    min-height: 30px;
+}
+.buyBtn i.fa:before {
+    content: '\f155';
+}
+.btn.buyBtn .icon {
+    /*border-right: 1px solid rgba(0,0,0,0.15);*/
+	display:none;
+}
+
+.btn.buyBtn > span, .btn.buyBtn > div {
+    padding: 10px !important;
+}
+.btn.buyBtn > div {
+    padding: 10px 20px !important;
+}
+.ticketPriceBlock {
+    padding: 2px 0;
+    min-height: 30px;
+}
+.btn.buyBtn:hover {
+    color: #fff;
+    background-color: #3d2a71;
+}
+.btn .icon, .btn .titWrap {
+    float: left;
+    text-align: left;
+}
+
+.btn .titWrap {
+    display: inline-block;
+    padding: 6px 10px 8px 10px;
+   /* border-left: 1px solid rgba(255,255,255,0.1);*/
+}
+.outputLine1, .outputLine2 {
+    padding: 25px 0;
+}
+.moreBetNameWrap {
+    background-color: #fff;
+    border: 1px solid #bebebe;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    min-height: 38px;
+    padding: 0;
+    overflow: hidden;
+    color: #606060;
+    cursor: pointer;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+
+.moreBetNameWrap .betName {
+    color: #606060;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+
+.moreBetNameWrap:hover .betName, .moreBetNameWrap.selected .betName{
+    color:#fff;
+}
+.moreBetNameWrap .icon i:before {
+    content: '\f10c';
+}
+
+.moreBetNameWrap .info i:before {
+    content: '\f05a';
+}
+
+.moreBetNameWrap.selected .icon i:before {
+    content: '\f192';
+}
+.moreBetNameWrap:hover, .moreBetNameWrap.selected{
+    border: 1px solid #28555F;
+    background-color: #132A2F;
+    color: #fff;
+}
+.moreBetNameWrap .icon, .moreBetNameWrap .info {
+    padding: 11px 9px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.moreBetNameWrap .info {
+    float: right;
+    cursor: pointer;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+
+.moreBetNameWrap .info:hover {
+    color: #ff1616;
+}
+
+.quickPickPlayingWrap {
+    /* border: 1px solid #bebebe; */
+    padding: 15px;
+    /* background-color: #E8E8E8; */
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+.quickPickPlayingWrap > div, .numberActionBox span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.fastLottoPlayingAreaReset {
+    padding-left: 0;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.outputLine0 {
+    padding-bottom: 25px;
+}
+.outputLine0 .inBlk span {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.outputLine0 .inBlk span.valNums {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 4px;
+}
+.fastLottoSelectedWrap ul{
+    margin:0px;
+    padding:0px;
+}
+
+.fastLottoSelectedWrap ul li, .fastLottoSelectedWrap ul li:hover  {
+    background-color: transparent;
+    width: 100px;
+    border:none;
+    display: inline-block;
+    float: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 5px;
+}
+.fastLottoSelectedWrap .fastLottoWrap.selected{
+    cursor:default;
+    width:100%;
+}
+.fastLottoSelectedWrap .fastLottoWrap.selected .numbWrap {
+    width: 100%;
+}
+.fastLottoWrap{
+    border: 2px solid #707070; height: 100px; border-radius: 10px; position: relative; left: 0px; top: 0px; text-align: center; font-size: 30px; color: #707070; width: 100%; background-color: transparent; overflow: hidden; font-weight: 300;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.fastLottoWrap.selected{
+    border: 2px solid #574196; color: #574196;}
+.fastLottoWrap .minusSign, .fastLottoWrap .plusSign{float: left;
+    text-align: center;
+    width: 33.33%;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    position:relative;}
+.fastLottoWrap .numbWrap{float: left;
+    text-align: center;
+    width: 33.33%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+}
+.fastLottoWrap .topWrap{clear: both; padding-top: 16px; font-weight: 300;}
+.fastLottoWrap .bottomWrap{border:none; clear: both; background-color: #707070; height: 40px; width: 100%; position: absolute; bottom: 0; right: 0; text-align: center; font-size: 20px; color: white;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.fastLottoWrap.selected .bottomWrap{border:none;  background-color:#574196;}
+/*----.fastLottoWrap:hover .minusSign:after, .fastLottoWrap:hover .plusSign:after ---------*/
+.fastLottoWrap .minusSign:after, .fastLottoWrap .plusSign:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    z-index: 6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.4);
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.moreGameNames .gameNameWrap .gameName {
+    vertical-align: top;
+    padding-left: 5px;
+}
+.myTicketOuterWrap {margin: 20px 0; text-align: left;}
+.myTicketInnerWrap{ color:#606060; font-weight:400;line-height: 100%; overflow: hidden; padding: 4px; text-align: center;}
+.myTicketInnerWrap > div{ display:inline-block; background-color:#ffffff; padding: 10px; min-height: 155px; -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.27); -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.27); box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.27);}
+.myTicketInnerWrap .myTicketInnerWrap1{ width:72%; vertical-align: top; position:relative; padding-bottom: 50px; text-align: left;}
+.myTicketInnerWrap .myTicketInnerWrap2{ width:25%; vertical-align: top; text-align: center; text-transform: uppercase; font-size: 14px; padding-top: 29px; padding-left: 8px; padding-right: 8px;}
+.myTicketInnerWrap .ticketGameName{ font-size:22px; font-weight:400;line-height: 120%; color: #584096;}
+.myTicketInnerWrap .transactionIDTitle, .myTicketInnerWrap .transactionTimeName{ color:#acacac; font-size:11px; font-style:italic; }
+.myTicketInnerWrap .transactionIDNum{ font-size:18px; margin-bottom: 4px;}
+.myTicketInnerWrap .transactionTimeNum{ font-size:14px;}
+.myTicketInnerWrap .ticketResultSymbol, .myTicketInnerWrap .ticketPrice { position: absolute; bottom: 10px;}
+.myTicketInnerWrap .ticketResultSymbol{ left:10px;}
+.myTicketInnerWrap .ticketPrice { right:10px; font-size:30px; font-weight:300; line-height: 30px; vertical-align: baseline; bottom: 5px;}
+.myTicketInnerWrap .ticketPrice span{ /*font-size:20px;*/}
+.myTicketInnerWrap .gameTypeIconTic {margin-bottom: 5px;}
+.myTicketInnerWrap .myTicketInnerWrap1:before, .myTicketInnerWrap .myTicketInnerWrap1:after {content: ''; display: block; width: 19px; height: 282px; position: absolute; background: url(/images/myTicketDottedCurveBig.png) no-repeat center top; top: 0; right: -10px; z-index: 5; overflow:hidden;}
+.myTicketInnerWrap .myTicketInnerWrap1:after{ background-position: center bottom; z-index:10; height: 16px; top: auto; bottom: -4px;}
+
+.selectStateCityArea label, .selectTopMainArea label{
+    font-weight:400;
+    color: #fff;
+    vertical-align:middle;
+    display: inline-block;
+    margin-right: 15px;
+}
+.selectStateCityArea select, .selectTopMainArea select  {
+    width: 245px;
+    height: 40px;
+    border: 1px solid #bebebe;
+    background-color: #fff;
+    border-radius: 3px;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.selectTopMainArea { margin-bottom:25px;}
+.round_button_display,
+.round_button_display.active,
+.round_button_display:hover {
+    border-radius: 50%;
+    background-color: transparent;
+    color:#614C9A;
+    border:1px solid #614C9A;
+    z-index:1000;
+    font-weight:400;
+    font-size:20px;
+    cursor:default;
+}
+
+.leftMenuCloneWrap{ display:none;}
+.instantGroupWrap{
+    padding: 25px 0px 0 0;
+    color: #606060;
+}
+.instantGroupWrap:last-child{ padding:25px 0;}
+.instantGroupWrap .pageSeprator {
+    margin-top: 25px;
+}
+.instantGroupWrap:first-child{ padding-top:0;}
+.instantGroupWrap.singleOpen{ padding-bottom:25px; padding-top:0;}
+.instantGroupWrap.singleOpen .pageSeprator{ display:none;}
+.instantGroupWrap h2 {
+    font-weight: 300;
+    color: #DDBA3E;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 44px;
+    position: relative;
+    margin-top: 0;
+}
+.instantGroupWrap h2:before {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 22px;
+    background: url("/images/ball-icons.png") no-repeat center 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -28px;
+    top: 32px;
+    overflow: hidden;
+}
+.instantGroupWrap ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.instantGroupWrap ul li {
+    /*width: 210px;*/
+    width: 150px;
+    list-style: none;
+    margin: 5px 5px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.gameDivInner{display: block;
+    background-color:transparent;
+    position:relative;
+    padding:5px;
+    text-align: center;
+}
+.gameDiv1:after{
+	content: '';
+    position: absolute;
+    font-family: 'FontAwesome';
+    color: #E5F0F3;
+    font-size: 30px;
+    line-height: 10px;
+    text-align: center;
+    padding-top: 50%;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    display: block;
+    z-index: 1000;
+	   -webkit-transition: all 0.5s ease !important;
+    -moz-transition: all 0.5s ease !important;
+    transition: all 0.5s ease !important;
+}
+.gameDiv1:hover:after {
+    content: '\f141';
+    position: absolute;
+    font-family: 'FontAwesome';
+    color: #E5F0F3;
+    font-size: 30px;
+    line-height: 10px;
+    text-align: center;
+    padding-top: 50%;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 32, 37, 0.5);
+    display: block;
+    z-index: 1000;
+}
+/*.gameDivInner:before, .gameDivInner:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 5px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.gameDivInner:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 5px;
+    left: auto;
+}*/
+
+.gameDiv .col-xs-8 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 120%;
+    min-height: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.gameDiv .col-xs-4 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 4px;
+    float: none;
+}
+.gameDiv .col-xs-4 span {
+    /*font-size: 12px;*/
+}
+.gameDiv{
+    cursor: pointer;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+	color: #fff;
+    text-transform: capitalize;
+}
+
+.gameDiv img{ width:100%;}
+.groupbuttonWrap{ display:none;}
+.modelbtnBox {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.btnOuterWrap{
+    color: #ffffff;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: #bf090f;
+    background: -moz-linear-gradient(top, #FF8B8B 3%, #EA2D34 6%, #bf090f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#FF8B8B), color-stop(6%,#EA2D34), color-stop(100%,#bf090f));
+    background: -webkit-linear-gradient(top, #FF8B8B 3%,#EA2D34 6%,#bf090f 100%);
+    background: -o-linear-gradient(top, #FF8B8B 3%,#EA2D34 6%,#bf090f 100%);
+    background: -ms-linear-gradient(top, #FF8B8B 3%,#EA2D34 6%,#bf090f 100%);
+    background: linear-gradient(to bottom, #FF8B8B 3%,#EA2D34 6%,#bf090f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8B8B', endColorstr='#bf090f',GradientType=0);
+    border: 1px solid #C20C12;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+.btnOuterWrap:hover{
+	background: -moz-linear-gradient(top, #FF8B8B 3%, #bf090f 6%, #bf090f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#FF8B8B), color-stop(6%,#bf090f), color-stop(100%,#bf090f));
+    background: -webkit-linear-gradient(top, #FF8B8B 3%,#bf090f 6%,#bf090f 100%);
+    background: -o-linear-gradient(top, #FF8B8B 3%,#bf090f 6%,#bf090f 100%);
+    background: -ms-linear-gradient(top, #FF8B8B 3%,#bf090f 6%,#bf090f 100%);
+    background: linear-gradient(to bottom, #FF8B8B 3%,#bf090f 6%,#bf090f 100%);
+}
+.modal-body .priceBox {
+    position: relative;
+    font-size: 22px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 14px;
+    border-right: 1px solid rgba(0,0,0,0.12);
+}
+
+.modal-body .priceBox span {
+    /*font-size: 12px;*/
+}
+.btnTitle {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 15px;
+    font-weight:300;
+    vertical-align: middle;
+}
+.btnTitle span {
+    font-weight: 400;
+}
+.tryBtnWrap{
+    margin: 8px 1px;
+}
+.tryBtnWrap a{ text-decoration: underline !important;
+    color: #32969C;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+#quickpickbanker {display: none;}
+#bankerUl {    background-color: #ff4f38 !important;
+    border: #ff4f38 !important;
+    border-radius: 7px;}
+#bankerBl {       background-color: #f2c00c !important;
+    border:  #f2c00c !important;
+    border-radius: 7px;}
+
+.draw-name h4{background-color: #102F33;padding: 5px 0;color: #fff;text-transform: uppercase;font-weight: 300;letter-spacing: 0.03em; width: 95%; margin-bottom:15px;}
+
+.alert.alert-error:before , .alert.alert-message:before{
+    color: #cb2700;
+    content: "\f071";
+    color: #e74c3c;
+    font-size: 32px;
+    font-family: FontAwesome;
+    float: left;
+    margin-right: 5px;
+    margin-left: -36px;
+}
+.alert.alert-info>div:before {
+    color: #cb2700;
+    content: "\f05a";
+    color: #3498db;
+    font-size: 32px;
+    font-family: FontAwesome;
+    float: left;
+    margin-right: 5px;
+    margin-left: -36px;
+}
+
+.alert.alert-error, .alert.alert-success, .alert.alert-info{ padding: 12px 12px 4px 50px !important;}
+#system-message .alert{
+    padding: 12px;
+    font-size: 14px;
+    line-height: 140%;
+    min-height: 43px;
+    padding-left: 50px!important;
+}
+#system-message .alert p{ padding-bottom:0;}
+#system-message-container.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#system-message-container>#system-message>.alert>div>p {
+    display: none;
+}
+#system-message-container>#system-message>.alert>div>p:first-child {
+    display: block;
+}
+
+ #resultDiv {
+    padding-bottom: 52px;
+}
+
+/*.pms_button {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+}
+.pms_button{
+    border-radius: 3px;
+}*/
+.pms_button, .buyBtn, .btn.btn-primary.pms_button{
+    /*background-color: #ff1616;
+    padding: 0;*/
+    color: #fff;
+    font-size: 18px;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+	background: #bf090f;
+    background: -moz-linear-gradient(top, #FF8B8B 3%, #EA2D34 6%, #bf090f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#FF8B8B), color-stop(6%,#EA2D34), color-stop(100%,#bf090f));
+    background: -webkit-linear-gradient(top, #FF8B8B 3%,#EA2D34 6%,#bf090f 100%);
+    background: -o-linear-gradient(top, #FF8B8B 3%,#EA2D34 6%,#bf090f 100%);
+    background: -ms-linear-gradient(top, #FF8B8B 3%,#EA2D34 6%,#bf090f 100%);
+    background: linear-gradient(to bottom, #FF8B8B 3%,#EA2D34 6%,#bf090f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8B8B', endColorstr='#bf090f',GradientType=0);
+    border: 1px solid #C20C12;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+.pms_button:hover, .buyBtn:hover, .btn.btn-primary.pms_button:hover{
+	background: -moz-linear-gradient(top, #FF8B8B 3%, #bf090f 6%, #bf090f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#FF8B8B), color-stop(6%,#bf090f), color-stop(100%,#bf090f));
+    background: -webkit-linear-gradient(top, #FF8B8B 3%,#bf090f 6%,#bf090f 100%);
+    background: -o-linear-gradient(top, #FF8B8B 3%,#bf090f 6%,#bf090f 100%);
+    background: -ms-linear-gradient(top, #FF8B8B 3%,#bf090f 6%,#bf090f 100%);
+    background: linear-gradient(to bottom, #FF8B8B 3%,#bf090f 6%,#bf090f 100%);
+}
+.buyBtn[disabled]{
+	background: -moz-linear-gradient(top, #3c494c 3%,#232c2f 6%,#101719 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#3c494c), color-stop(6%,#232c2f), color-stop(100%,#101719));
+    background: -webkit-linear-gradient(top, #3c494c 3%,#232c2f 6%,#101719 100%);
+    background: -o-linear-gradient(top, #3c494c 3%,#232c2f 6%,#101719 100%);
+    background: -ms-linear-gradient(top, #3c494c 3%,#232c2f 6%,#101719 100%);
+    background: linear-gradient(to bottom, #3c494c 3%,#232c2f 6%,#101719 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c494c', endColorstr='#101719',GradientType=0);
+	border: 1px solid #142125;
+    color: #3e4b4e;
+    opacity: .65;
+}
+.btn.reset_btn{
+	border: 1px solid #1C6267 !important;
+    background: #8bf7ff;
+    background: -moz-linear-gradient(top, #8bf7ff 3%, #2F919C 6%, #1c6065 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #8bf7ff), color-stop(6%, #2F919C), color-stop(100%, #1c6065));
+    background: -webkit-linear-gradient(top, #8bf7ff 3%, #2F919C 6%, #1c6065 100%);
+    background: -o-linear-gradient(top, #8bf7ff 3%, #2F919C 6%, #1c6065 100%);
+    background: -ms-linear-gradient(top, #8bf7ff 3%, #2F919C 6%, #1c6065 100%);
+    background: linear-gradient(to bottom, #8bf7ff 3%, #2F919C 6%, #1c6065 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#8bf7ff', endColorstr='#1c6065', GradientType=0);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+.btn.reset_btn:hover{
+	background: -moz-linear-gradient(top, #8bf7ff 3%, #1c6065 6%, #1c6065 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #8bf7ff), color-stop(6%, #1c6065), color-stop(100%, #1c6065));
+    background: -webkit-linear-gradient(top, #8bf7ff 3%, #1c6065 6%, #1c6065 100%);
+    background: -o-linear-gradient(top, #8bf7ff 3%, #1c6065 6%, #1c6065 100%);
+    background: -ms-linear-gradient(top, #8bf7ff 3%, #1c6065 6%, #1c6065 100%);
+    background: linear-gradient(to bottom, #8bf7ff 3%, #1c6065 6%, #1c6065 100%);
+    border: 1px solid #1C6267 !important;
+}
+.offcanvas .offcanvas-menu ul.nav-child li {
+    padding-left: 10px;
+}
+
+.alert.alert-success:after {
+    color: #cb2700;
+    content: "\f118";
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    color: #2ecc71;
+    font-size: 32px;
+    font-family: FontAwesome;
+}
+
+
+
+@media (min-width: 768px) {
+    #gameSelectionType > .gameNameWrap, #gameSelectionType > .betNameWrap{ width:50%;  text-align:center;}
+    #gameSelectionType > .gameNameWrap .gameNameOuterWrap, #gameSelectionType > .betNameWrap .betNameOuterWrap{ display:inline-block; text-align:left;}
+    .ticket{font-size: 16px;}
+    .ticket-d{ font-size:16px;}
+    .btn.btn-info.btn-sm.round_button_display.lotto-ball {
+        font-size: 20px;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 991px){
+    .gameDiv:hover {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.10);
+    }
+    .fastLottoWrap .minusSign:hover:after, .fastLottoWrap .plusSign:hover:after {background-color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,.2);}
+    .fastLottoWrap .minusSign:hover, .fastLottoWrap .plusSign:hover{color: #ffffff;}
+    .fastLottoWrap:hover .bottomWrap{border:none;  background-color:#574196;}
+    .fastLottoWrap:hover{border: 2px solid #574196; color: #574196;}
+    .ticket-top, .ticket-bottom, .ticket {
+        width: 55%;
+    }
+    .btn.btn-info.btn-sm.round_button_display.lotto-ball {
+        font-size: 18px;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        padding: 0;
+    }
+   /* .pms_button:hover {
+        background-color: #573F95 !important;
+        border:1px solid #573F95 !important;
+    }*/
+}
+@media screen and (min-width:1080px){
+    .gameDiv:hover {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+        box-shadow: none;
+    }
+    .fastLottoWrap .minusSign:hover:after, .fastLottoWrap .plusSign:hover:after {background-color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,.2);}
+    .fastLottoWrap .minusSign:hover, .fastLottoWrap .plusSign:hover{color: #ffffff;}
+    .fastLottoWrap:hover .bottomWrap{border:none;  background-color:#574196;}
+    .fastLottoWrap:hover{border: 2px solid #574196; color: #574196;}
+}
+@media screen and (min-width:1200px){
+    .btn.btn-info.btn-sm.round_button_display.lotto-ball {
+        font-size: 16px;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        padding: 0;
+    }
+}
+@media (max-width:1280px){
+
+}
+@media only screen and (max-width:1200px){
+    .selectTopMainArea > .pull-left, .selectTopMainArea > .pull-right {
+        float: none !important;
+        display: block;
+    }
+
+    .selectTopMainArea > div > label{
+        min-width: 150px;
+    }
+    .selectStateCityArea label {
+        min-width: 100px;
+    }
+
+    .selectTopMainArea > div:nth-child(2) {
+        margin-top:25px;
+    }
+}
+@media only screen and (max-width:1200px) and (min-width:992px){
+
+}
+@media only screen and (max-width:991px){
+    span.lotto-ball span.size2 {
+        left: 6px;
+
+    }
+    .round_button span {
+        width: 10px;
+        float: left;
+        margin: 1px 1px;
+    }
+    .leftMenuCloneWrap {
+        margin-left: -15px;
+        margin-right: -15px;
+        display: block;
+        margin-top: 0;
+        margin-bottom: 33px;
+    }
+    .leftMenuCloneInnerWrap {
+        display: table;
+        width: 100%;
+    }
+    .leftMenuCloneWrap .leftMenuCloneInnerWrap > div {
+        display: table-cell;
+        height: 45px;
+        vertical-align: middle;
+    }
+    .leftMenuCloneWrap .cloneTitle {
+        background-color: #362464;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 4px 0 0 4px;
+        width: 30%;
+        padding: 0 15px;
+    }
+    .leftMenuCloneWrap .cloneSelector {
+        width: 70%;
+    }
+    .leftMenuCloneWrap .cloneSelector select {
+        width: 100%;
+        height: 45px;
+        border: none;
+        border-radius: 0 4px 4px 0;
+    }
+
+}
+@media only screen and (max-width:991px) and (min-width:768px){
+    #gameSelectionType .moreGameNames > .row > .col-md-4{
+        margin-bottom:15px;
+    }
+    #gameSelectionType .moreGameNames > .row{
+        margin-bottom:0px;
+    }
+    .ticket-top, .ticket-bottom, .ticket {
+        width: 60%;
+    }
+}
+@media only screen and (max-width:767px) and (min-width:560px){
+    .ticket-top, .ticket-bottom, .ticket {
+        width:60%;
+    }
+
+}
+
+@media only screen and (max-width:767px){
+    #gameSelectionType > div{float:none;}
+    #gameSelectionType > .betNameWrap{
+        position:relative;
+        border-left:none;
+        padding-left: 0;
+        margin-top: 25px;
+        display:block;
+    }
+    #gameSelectionType .moreGameNames, #gameSelectionType .moreBetNames{ float:none;}
+
+    #gameSelectionType > .gameNameWrap{
+        padding-right: 0;
+        border-right: none;
+        display:block;
+    }
+    #gameSelectionType .moreGameNames > .row{
+        margin-bottom:0;
+    }
+    #gameSelectionType .moreGameNames > .row > .col-md-4{
+        margin-bottom:15px;
+    }
+    #gameSelectionType .moreBetNamesWrap:before, #gameSelectionType .moreGameNamesWrap:before{left: 16px; margin-left:0;}
+    #gameSelectionType > .betNameWrap{ left:0;}
+    .quickPickPlayingWrap #qpDiv {
+        margin-bottom: 7px;
+        margin-top:7px;
+    }
+    .selectedNumberDisplayArea{ margin: 20px 10px 25px 10px;}
+    .btn.btn-info.btn-sm.round_button_display.lotto-ball{
+		font-size: 16px;
+		width: 34px;
+		height: 34px;
+		line-height: 34px;
+		padding: 0;
+    }
+    .leftMenuCloneWrap {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .instantGroupWrap.sportsGroup > .row:before, .instantGroupWrap.sportsGroup > .row:after{ display:none;}
+}
+
+@media only screen and (max-width:560px){
+    .selectStateCityArea select, .selectTopMainArea select{width: 100%;}
+    .ticket-top, .ticket-bottom, .ticket {
+        width:95%;
+    }
+    .ticket-d, .ticket-d-top, .ticket-d-bottom { width:95%;}
+    .leftMenuCloneWrap .leftMenuCloneInnerWrap > div{display: block;}
+    .leftMenuCloneWrap .cloneSelector, .leftMenuCloneWrap .cloneTitle{width: 100%;}
+    .leftMenuCloneWrap .cloneTitle{
+        padding: 15px 15px;
+        height: auto !important;
+        border-radius: 4px 4px 0 0;
+    }
+    .leftMenuCloneWrap .cloneSelector select{
+        border-radius: 0 0 4px 4px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    #gameSelectionType .gameNameWrap .gameNameInnerWrap, #gameSelectionType .betNameWrap .betNameInnerWrap{
+        width: 100%;
+    }
+    .quickPickPlayingWrap{
+        padding: 10px 0 12px 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .quickPickPlayingWrap #qpDiv {
+        margin-bottom: 7px;
+        margin-top:0;
+    }
+    .myTicketInnerWrap{ position:relative; padding: 0;}
+    .myTicketInnerWrap > div{ width:100%; display:block;}
+    .myTicketInnerWrap .myTicketInnerWrap1:before, .myTicketInnerWrap .myTicketInnerWrap1:after{background: none;}
+    .myTicketInnerWrap .myTicketInnerWrap2{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        padding: 10px 0;
+        height: 100px;
+        min-height: 100px;
+        overflow: hidden;
+    }
+    .myTicketInnerWrap .myTicketInnerWrap1{
+        padding-top: 110px;
+        width: auto;
+        margin: 0 4px;
+        border-bottom: 1px solid #DAD8D8;
+    }
+    .selectedNumberDisplayArea > span{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .selectedNumberDisplayArea {
+        margin: 20px 0px 25px 0px;
+    }
+    .selectedNumberDisplayArea > div{
+        margin: 5px 0;
+    }
+    .ticket-d{ font-size:14px;}
+    .ticket-d, .ticket-d-top, .ticket-d-bottom {
+        width: 100%;
+    }
+    .instantGroupWrap ul{margin: 0 -10px;}
+    .instantGroupWrap ul li{width: 125px; margin: 5px; vertical-align: top;}
+    .instantGroupWrap ul li .gameDivInner{padding: 7px;}
+    .instantGroupWrap ul li .gameDiv .col-xs-8{font-size: 12px; font-weight: 500;}
+    .col-sm-8.col-sm-push-4.modelbtnBox{text-align: center;}
+    .btnOuterWrap{padding: 8px 10px;}
+    .modal-body .priceBox{ padding-right: 8px;}
+    .btnTitle{padding-left: 8px;}
+}
+
+@media (max-width: 991px) {
+  /*  #sp-component {
+        width: 100%;
+    }
+    
+    .sp-megamenu-parent {
+        display: none !important;
+    }
+	*/
+}
+
+@media (min-width: 991px) {
+    .sp-megamenu-parent {
+        display: block !important;
+    }
+    #offcanvas-toggler {
+        display: none !important;
+
+    }
+}
+.alert-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.alert-error p {
+    margin: auto;
+}
+
+.remove-panel {
+    position: absolute;
+    font-size: 18px;
+    margin-left: -18px;
+    margin-top: -2px;
+    color: #FF1616;
+    background: white;
+}
+.remove-panel:HOVER {
+    cursor: pointer;
+}
+
+.deposit_large_modal_close {
+    border: 1px solid black !important;
+    border-radius: 15px !important;
+    background: black !important;
+    color: white !important;
+    padding: 1px 5px 2px 5px !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    margin-right: -7px !important;
+    margin-top: -9px !important;
+    opacity: 1 !important;
+}
+
+#deposit_large_modal .modal-body>iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.ui-datepicker-month, .ui-datepicker-year {
+    display: inline-block;
+    padding: 0px;
+}
+
+.ui-widget-header {
+    border: 1px solid #0058a0;
+    background: #0058a0 !important;
+}
+.alert>h4 {
+    display:none;
+}
+
+.float-left{
+float:left;
+}
+.float-right{
+float:right;
+}
+.banner{
+width:100%;
+}
+.pms-bottom{
+/*-webkit-box-shadow: 0px -1px 15px 6px rgba(0,0,0,0.50);
+-moz-box-shadow: 0px -1px 15px 6px rgba(0,0,0,0.50);
+box-shadow: 0px -1px 15px 6px rgba(0,0,0,0.50);*/
+border-top:1px solid rgb(230, 230, 230);
+}
+.article-hr{
+width:100%;
+height:1px;
+background-color:#2c709d;
+}
+.boxed-version,
+.boxed{
+max-width:none !important;
+}
+
+.cwcookielaw{
+display:none !important;
+}
+
+.full-width {
+    width:100% !important;
+}
+
+.error { 
+    color: red !important; 
+}
+
+.bold { 
+    font-weight: bold !important; 
+}
+
+.customise { 
+    background: #24003e!important;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.customise:HOVER {
+    background: #e74c3c !important;
+    color: white;
+}
+
+.pmsHeader {
+    height: 50px;
+    background: #13292F;
+    border-radius: 6px 6px 0 0;
+    text-align: left;
+    border-bottom: 1px solid rgba(42, 98, 117,0.35);
+    margin: 0px 15px;
+    padding: 1px 15px;
+    width: auto;
+    display: block;
+    float: none;
+}
+
+.pmsHeader h3 span {
+	font-size:20px;
+}
+
+.pmsHeaderIcons {
+    float: right;
+    font-size: 14px;
+    line-height: 26px;
+	width: 130px;
+    text-align: right;
+}
+.pmsHeaderIcons a {
+    border: 1px solid #28747D !important;
+    padding: 2px;
+    border-radius: 3px;
+    background: #195D65;
+    margin: 1px;
+    color: #fff;
+}
+.pmsHeaderIcons a:hover{
+	border: 1px solid #1F454A;
+    background: #13373C;
+    color: #F1BA37;
+}
+.pmsHeader > h3 {
+    /*font-weight: 300;*/
+    margin-top: 8px;
+    /*color: white;*/
+}
+
+.pmsHeader > h4 {
+    color: white;
+}
+.modal-header.pmsHeader{margin:0; padding: 12px 15px;}
+.modal-header.pmsHeader .close {
+    margin-top: 10px;
+    margin-right: -3px;
+    outline: none;
+}
+.whiteBackground {
+   	background: rgba(109, 183, 192, 0.25);
+    border: none;
+    border-radius: 0 0 6px 6px;
+    padding:15px 0;
+	margin: auto;
+    margin-bottom: 75px;
+	color: #fff;
+}
+
+.item-page .whiteBackground h3{
+	font-size: 17px;
+    margin: 10px 0px;
+}
+
+.round_button { /* border-radius: 15px;
+    margin: 2px 2px;*/
+    border-radius: 20px;
+    background-color: #356284;
+    color:#fff;
+    border:none;
+    z-index:1000;
+    font-weight:400;
+    font-size:18px;
+    box-shadow:1px 1px 5px 2px #799fbe inset;
+    -moz-box-shadow:1px 1px 5px 2px #799fbe inset;
+    -webkit-box-shadow:1px 1px 5px 2px #799fbe inset;
+    outline:none !important;
+}
+
+.round_button_12_24 { /* border-radius: 15px;
+    margin: 2px 2px;*/
+    border-radius: 26px;
+    background-color: #356284;
+    color:#fff;
+    border:none;
+    z-index:1000;
+    font-weight:400;
+    font-size:20px;
+    box-shadow:1px 1px 5px 2px #799fbe inset;
+    -moz-box-shadow:1px 1px 5px 2px #799fbe inset;
+    -webkit-box-shadow:1px 1px 5px 2px #799fbe inset;
+    outline:none !important;
+}
+
+.pms_button
+{
+    background-color: #ff4f38 !important;
+    border:none !important;
+    line-height:25px;
+}
+
+.pms_button_bl
+{
+    background-color: #f2c00c !important;
+    border:none !important;
+    /*line-height:25px;*/
+}
+.pms_button_ul
+{
+    background-color: #0058a0 !important;
+    border:none !important;
+    /*line-height:25px;*/
+}
+
+.round_button_display,
+.round_button_display.active,
+.round_button_display:hover {
+    border-radius: 20px;
+    background-color: #102f33;
+    color: #FFFFFF;
+    border:none;
+    z-index:1000;
+    font-weight:400;
+    font-size:20px;
+    /*box-shadow:1px 1px 5px 2px #799fbe inset;
+    -moz-box-shadow:1px 1px 5px 2px #799fbe inset;
+    -webkit-box-shadow:1px 1px 5px 2px #799fbe inset;*/
+    cursor:default;
+}
+/***************new css****************/
+.group-control .btn-primary{margin-bottom:10px;}
+
+
+/***************new css****************/
+@media (max-width:567px){
+    .pms-grid-6>.pms-block-a, .pms-grid-6>.pms-block-b, .pms-grid-6>.pms-block-c, .pms-grid-6>.pms-block-d, .pms-grid-6>.pms-block-e, .pms-grid-6>.pms-block-f {
+    width: 32.5%;
+    margin-bottom: 10px;
+}
+
+}
+
+.pms-align-right{
+    text-align:right;
+}
+
+.round_button span {
+    width: 18px;
+    float: left;
+    margin: 2px 2px;
+    }
+
+.round_button_12_24 span {
+    width: 30px;
+    float: left;
+    margin: 6px 2px;
+}
+
+span.lotto-ball span.size2 {
+    left: 8px;
+    
+}
+.bet_amount {
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+.round_button.active , .round_button_12_24.active {
+    color: #fff;
+    background-color:#ff4f38;
+}
+
+.round_button:hover , .round_button_12_24:hover {
+    background-color: #799fbe;
+    border:none;
+}
+.ticket-left{
+    text-align:left;
+}
+
+@media (max-width:991px){
+.numberPlayingInnerWrap ul li {
+    font-weight: 600;
+}
+.hide-border{
+border-right:none !important;
+border-bottom:2px solid grey;
+}
+
+.pms-hr{
+display:none !important;
+}
+
+.round_button { 
+    border-radius: 15px;
+    background-color: #356284;
+    color:#fff;
+    border:none;
+    z-index:1000;
+    font-weight:100;
+    font-size:10px;
+    box-shadow:1px 1px 5px 2px #799fbe inset;
+    -moz-box-shadow:1px 1px 5px 2px #799fbe inset;
+    -webkit-box-shadow:1px 1px 5px 2px #799fbe inset;
+}
+
+.round_button_12_24 { 
+    border-radius: 18px;
+    background-color: #356284;
+    color:#fff;
+    border:none;
+    z-index:1000;
+    font-weight:100;
+    font-size:10px;
+    box-shadow:1px 1px 5px 2px #799fbe inset;
+    -moz-box-shadow:1px 1px 5px 2px #799fbe inset;
+    -webkit-box-shadow:1px 1px 5px 2px #799fbe inset;
+}
+
+.round_button_12_24 span {
+    width: 15px;
+    float: left;
+    margin: 4px 2px;
+}
+
+.round_button_display,
+.round_button_display.active,
+.round_button_display:hover {
+    border-radius: 50%;
+    background-color: #102f33;
+    color:#fff;
+    border:none;
+    z-index:1000;
+    font-weight:100;
+    font-size:10px;
+    /*box-shadow:1px 1px 5px 2px #799fbe inset;
+    -moz-box-shadow:1px 1px 5px 2px #799fbe inset;
+    -webkit-box-shadow:1px 1px 5px 2px #799fbe inset;*/
+    cursor:default;
+}
+
+.pms-align-right{
+    text-align:left;
+    padding-left:0px;
+}
+
+.round_button span {
+    width: 10px;
+    float: left;
+    margin: 1px 1px;
+    }
+
+span.lotto-ball span.size2 {
+    left: 6px;
+    
+}
+.ticket-left{
+        text-align:left;
+        padding-left:20px;
+    }
+
+}
+
+@media (max-width:1280px){
+    .ticket-left{
+        text-align:left;
+        padding-left:20px;
+    }
+}
+
+.pms-grid-10,.pms-grid-9,.pms-grid-7,.pms-grid-5,.pms-grid-6,.pms-grid-15,.pms-grid-12,.pms-grid-8{
+    overflow: hidden;
+}
+.pms-block-a,.pms-block-b,.pms-block-c,.pms-block-d,.pms-block-e,.pms-block-f,.pms-block-g,.pms-block-h,.pms-block-i,.pms-block-j,.pms-block-k,.pms-block-l,.pms-block-m,.pms-block-n,.pms-block-o {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    min-height: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div[class^="pms-block"]>input[type="text"] {
+   text-align: center;
+}
+
+/* force new row */
+.pms-block-a {
+    clear: left;
+}
+
+.pms-grid-15>.pms-block-a,.pms-grid-15>.pms-block-b,.pms-grid-15>.pms-block-c,.pms-grid-15>.pms-block-d,.pms-grid-15>.pms-block-e,.pms-grid-15>.pms-block-f,.pms-grid-15>.pms-block-g,.pms-grid-15>.pms-block-h,.pms-grid-15>.pms-block-i,.pms-grid-15>.pms-block-j,.pms-grid-15>.pms-block-k,.pms-grid-15>.pms-block-l,.pms-grid-15>.pms-block-m,.pms-grid-15>.pms-block-n,.pms-grid-15>.pms-block-o
+{ /* width: 6.6%; IE7 */
+    width: 6.66%;
+}
+
+.pms-grid-12>.pms-block-a,.pms-grid-12>.pms-block-b,.pms-grid-12>.pms-block-c,.pms-grid-12>.pms-block-d,.pms-grid-12>.pms-block-e,.pms-grid-12>.pms-block-f,.pms-grid-12>.pms-block-g,.pms-grid-12>.pms-block-h,.pms-grid-12>.pms-block-i,.pms-grid-12>.pms-block-j,.pms-grid-12>.pms-block-k,.pms-grid-12>.pms-block-l
+{ /* width: 8.3%; IE7 */
+    width: 8.33%;
+}
+
+.pms-grid-10>.pms-block-a,.pms-grid-10>.pms-block-b,.pms-grid-10>.pms-block-c,.pms-grid-10>.pms-block-d,.pms-grid-10>.pms-block-e,.pms-grid-10>.pms-block-f,.pms-grid-10>.pms-block-g,.pms-grid-10>.pms-block-h,.pms-grid-10>.pms-block-i,.pms-grid-10>.pms-block-j
+    { /* width: 9.925%; IE7 */
+    width: 10%;
+}
+
+
+.pms-grid-9>.pms-block-a,.pms-grid-9>.pms-block-b,.pms-grid-9>.pms-block-c,.pms-grid-9>.pms-block-d,.pms-grid-9>.pms-block-e,.pms-grid-9>.pms-block-f,.pms-grid-9>.pms-block-g,.pms-grid-9>.pms-block-h,.pms-grid-9>.pms-block-i
+    { /* width: 10.50%; IE7 */
+    width: 11.11%;
+}
+
+.pms-grid-8>.pms-block-a,.pms-grid-8>.pms-block-b,.pms-grid-8>.pms-block-c,.pms-grid-8>.pms-block-d,.pms-grid-8>.pms-block-e,.pms-grid-8>.pms-block-f,.pms-grid-8>.pms-block-g,.pms-grid-8>.pms-block-h
+{ /* width: 12.5%; IE7 */
+    width: 12.5%;
+}
+
+.pms-grid-7>.pms-block-a,.pms-grid-7>.pms-block-b,.pms-grid-7>.pms-block-c,.pms-grid-7>.pms-block-d,.pms-grid-7>.pms-block-e,.pms-grid-7>.pms-block-f,.pms-grid-7>.pms-block-g
+{ /* width: 14%; IE7 */
+    width: 14.28%;
+}
+
+.pms-grid-5>.pms-block-a,.pms-grid-5>.pms-block-b,.pms-grid-5>.pms-block-c,.pms-grid-5>.pms-block-d,.pms-grid-5>.pms-block-e
+{ /* width: 19.925%; IE7 */
+    width: 20%;
+}
+
+.pms-grid-6>.pms-block-a,.pms-grid-6>.pms-block-b,.pms-grid-6>.pms-block-c,.pms-grid-6>.pms-block-d,.pms-grid-6>.pms-block-e,.pms-grid-6>.pms-block-f
+{ /* width: 16%; IE7 */
+    width: 16.66%;
+}
+
+.popupDiv {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:1
+}
+
+.panel-heading {
+    padding: 9px;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 5px;
+    border-bottom: 1;
+    background-color: #0058a0 !important;
+    color:white !important;
+}
+
+.panel-heading>h4{
+    font-weight:500;
+}
+.panel-default {
+    border: none !important;
+}
+
+.panel-body {
+    border: 1px solid grey;
+    margin: 5px 0px;
+    text-align:justify;
+}
+
+
+#loader {
+    display:none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100000;
+    background-color:black;
+    opacity:0.5;
+}
+
+.nav-tabs{
+    border:none !important;
+    border-radius:none !important;
+}
+
+.nav-tabs >li
+{
+    /*border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
+    width:50%;
+    text-align:center;
+    border:none !important;
+    border-radius:none !important;
+}
+
+.nav-tabs >li > a> b
+{
+    color:black !important;
+    text-transform: uppercase;
+}
+
+.nav-tabs >li:hover > a> b,
+.nav-tabs >li.active > a> b
+{
+    color:white !important;
+    text-transform: uppercase;
+}
+
+.nav-tabs >li.active,
+.nav-tabs >li.active>a
+{
+    box-shadow:0px 0px 20px 6px #592c79 inset;
+    -moz-box-shadow:0px 0px 20px 6px #592c79 inset;
+    -webkit-box-shadow:0px 0px 20px 6px #592c79 inset;
+    background-color:#b559f6 !important;
+    border:none !important;
+    border-radius:none !important;
+    height:41px;
+}
+
+.nav-tabs >li:hover,
+.nav-tabs >li:hover>a{
+    background-color:#799fbe !important;
+    border:none !important;
+    border-radius:none !important;
+    border-bottom:1px solid #9256bf !important;
+}
+
+.tab-content{
+    padding:8px;
+    border:1px solid #9256bf;
+    /*box-shadow:1px 1px 5px 1px #799fbe inset;
+    -moz-box-shadow:1px 1px 5px 1px #799fbe inset;
+    -webkit-box-shadow:1px 1px 5px 1px #799fbe inset;*/
+}
+.ticket {
+    background: url(/images/PMS/ticket_bg.png);
+    background-repeat:repeat-y;
+    background-size:100%;
+    color:#233D4C;
+    padding:10px 20px 10px 5px;
+    /*border-radius:15px;*/
+   /* width:50%;*/
+    /*margin-top:20px;*/
+    font-size:16px;
+}
+
+.ticket>div>h3 {
+text-transform: uppercase;
+color: #102F33;
+font-weight: 600;
+}
+
+.ticket-top {
+    background: url(/images/PMS/ticket_bg_top.png);
+    background-repeat:repeat-y;
+    background-size:100% 100%;
+    /*border-radius:15px;*/
+    margin-top:20px;
+   /* width:50%;*/
+    height:50px;
+    /*-webkit-transform:scaleY(-1);
+        -moz-transform:scaleY(-1);
+        -ms-transform:scaleY(-1);
+        -o-transform:scaleY(-1);
+        transform:scaleY(-1);*/
+}
+
+.ticket-bottom {
+    background: url(/images/PMS/ticket_bg_bottom.png);
+    background-repeat:repeat-y;
+    background-size:100% 100%;
+    /*border-radius:15px;*/
+    /*width:50%;*/
+    height:50px;
+}
+
+.ticket-d {
+    background: url(/images/PMS/ticket_bg.png);
+    background-repeat:repeat-y;
+    background-size:100%;
+    color:#004883;
+    padding:10px;
+    /*border-radius:15px;*/
+    width:78%;
+    /*margin-top:20px;*/
+    font-size:13px;
+}
+
+.ticket-d>div>h3 {
+text-transform:uppercase;
+}
+
+.ticket-d-top {
+    background: url(/images/PMS/ticket_bg_top.png);
+    background-repeat:repeat-y;
+    background-size:100% 100%;
+    /*border-radius:15px;*/
+    margin-top:20px;
+    width:78%;
+    height:50px;
+    /*-webkit-transform:scaleY(-1);
+        -moz-transform:scaleY(-1);
+        -ms-transform:scaleY(-1);
+        -o-transform:scaleY(-1);
+        transform:scaleY(-1);*/
+}
+
+.ticket-d-bottom {
+    background: url(/images/PMS/ticket_bg_bottom.png);
+    background-repeat:repeat-y;
+    background-size:100% 100%;
+    /*border-radius:15px;*/
+    width:78%;
+    height:50px;
+}
+
+.ticket-hr {
+    width:95%;
+    height:1px;
+    background-color:#a2a2a2;
+}
+
+.ticket-numbers{
+    width:90%;
+    padding: 10px 0;
+}
+
+.ticket-right{
+    text-align:right;
+    padding-right:25px;
+}
+
+.userinfo{
+    min-height: 50px; 
+    min-width:50px;
+    padding:11px; 
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.fastlottoTxt {
+    margin-left: 10px;
+}
+
+.sportsb-ticket .ticket-right{
+  padding-right: 30px;
+}
+
+.sportsb-ticket .ticket-d{
+  padding:10px 20px 10px 10px;
+}
+
+
+.sportsb-ticket  .gameDivtkt.sportsLottWrap{ 
+   margin: 12px 12px 12px 10px;
+   border: 1px solid #a2a2a2;
+}    
+
+@media (max-width: 767px) {
+    .mod-right .fright {
+        padding-top: 0px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .mod-right .fright {
+        padding-top: 30px !important;
+    }
+}
+
+
+body {
+    /*background-image: url(' /images/imagesnew/backgroundimagebody.jpg') !important;
+    background-attachment: fixed !important;*/
+}
+
+div[id^="bcTarget"]{
+    margin-top:20px;
+	overflow: hidden !important;
+}
+
+.close {
+    margin-right: 10px;
+}
+
+@media (max-width: 990px) and (min-width: 767px) {
+    .fright {
+        width: 50%;
+    }
+    .mod-right .fleft {
+        float: right;
+    }
+}
+.marginClass {
+    margin-right: 7px;
+    margin-left: 7px;
+}
+.floatingImages{
+    float: left;
+}
+
+.floatingDiv{
+    float: right;
+}
+
+@media (max-width: 767px) {
+    .mod-right .fleft {
+        float:none;
+    }
+    .marginClass {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .floatingImages{
+        display: inline-block;
+        float: none;
+    }
+    .floatingDiv{
+        float: none;
+    }
+}
+
+
+.menuStick {
+    position: fixed !important;
+    z-index: 9999 !important;
+}
+
+.menuStickRemove {
+    position: relative !important;
+    z-index: 9999 !important;
+}
+
+.playOnlineStick {
+    position: fixed !important;
+    z-index: 100000 !important;
+    top: 0 !important;
+    right: 2% !important;
+}
+
+.playOnlineStickDiv {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.playOnlineRemove {
+    position: relative !important;
+    z-index: 9999 !important;
+}
+
+.playOnlineStickRemoveDiv {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-radius: 8px !important;
+}
+
+.pms-hr{
+    width:100%;
+    height:2px;
+    background-color:#A2A2A2;
+    margin-top:2px;
+}
+
+.alert-message{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+.alert-message hr{border-top-color:#e4b9c0}
+.alert-message .alert-link{color:#843534}
+
+.getGetApp{
+background-color:#015e9e;color:white;padding:40px 0px;margin-top:50px;margin-bottom:0px;font-size:16px;line-height:200%;
+}
+
+.bg-color-1{
+background-color:#428bca;
+}
+
+.bg-color-2{
+background-color:#223949;
+}
+
+.numberPlayingInnerWrap {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.numberPlayingInnerWrap ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.clearBoth {
+    clear: both;
+}
+
+.numberPlayingInnerWrap ul li {
+    background-color: #e8e8e8;
+    min-height: 20px;
+    color: #303030;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+
+ul.numsCol24 li {
+    width: 3.66%;
+    border: 1px solid #7accc8;
+    border-radius: 50%;
+    margin: 0.25%;
+}
+
+ul.numsCol18 li {
+    width: 5.05%;
+    border: 1px solid #7accc8;
+    border-radius: 50%;
+    margin: 0.25%;
+}
+
+ul.numsCol12 li {
+    width: 7.83%;
+    border: 1px solid #7accc8;
+    border-radius: 50%;
+    margin: 0.25%;
+}
+
+ul.numsCol14 li {
+    width: 6.50%;
+    border: 1px solid #7accc8;
+    border-radius: 50%;
+    margin: 0.25%;
+    height: 53px !important;
+}
+
+ul.numsCol6 li {
+    width: 16.16%;
+    border: 1px solid #7accc8;
+    border-radius: 50%;
+    margin: 0.25%;
+}
+
+.numberPlayingInnerWrap ul.numsCol14:after {
+	content: "";
+    clear: both;
+    display: block;
+    font-size: 0px;
+}
+
+.numberPlayingInnerWrap ul li span {
+    display: block;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 100%;
+}
+
+.numberPlayingInnerWrap ul li:active, .numberPlayingInnerWrap ul li.selected, .numberPlayingInnerWrap ul li.selected:hover {
+    background-color: #57dfdd;
+    color: #102f33;
+    border-color: #57dfdd;
+    -moz-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+}
+@media only screen and (max-width:991px) and (min-width:768px) {
+    ul.numsCol12 li, ul.numsCol18 li, ul.numsCol24 li {
+        width: 7.83%;
+        border: 2px solid #7accc8;
+    }
+    ul.numsCol6 li {
+        width: 16.16%;
+        border: 2px solid #7accc8;
+    }
+		ul.numsCol14 li{
+		width: 7.14%;
+		border-right: 2px solid #ffffff;
+		border-bottom: 2px solid #ffffff;
+	}
+}
+@media only screen and (max-width:767px) and (min-width:560px){
+.ul.numsCol12 li, ul.numsCol18 li, ul.numsCol24 li{
+        width: 7.83%;
+        border: 2px solid #7accc8;
+    }
+
+    ul.numsCol6 li {
+        width: 16.16%;
+        border: 2px solid #7accc8;
+    }
+			ul.numsCol14 li{
+		width: 10.00%;
+		border-right: 2px solid #ffffff;
+		border-bottom: 2px solid #ffffff;
+	}
+
+	ul.numsCol14 li{
+		width: 7.14%;
+		border-right: 2px solid #ffffff;
+		border-bottom: 2px solid #ffffff;
+	}
+}
+
+@media only screen and (max-width:560px) {
+    ul.numsCol6 li, ul.numsCol12 li, ul.numsCol18 li, ul.numsCol24 li,ul.numsCol14 li {
+        width: 16.16%;
+        border: 2px solid #7accc8;
+    }
+}
+@media only screen and (max-width:400px) {
+    .numberPlayingOuterWrap {
+        padding: 6px 4px 4px 6px;
+    }
+}
+.numberPlayingOuterWrap {
+    width: 100%;
+   /* border: 1px solid #bebebe;
+    padding: 15px 14px 14px 15px;*/
+    background-color:transparent;
+	color: #fff;
+}
+@media screen and (min-width: 991px){
+    .numberPlayingInnerWrap ul li:hover {
+        -moz-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+        -webkit-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+        box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+        background-color: #d4d4d4;
+    }
+}
+@media screen and (min-width:1080px){
+    .numberPlayingInnerWrap ul li:hover {
+        -moz-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+        -webkit-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+        box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
+        background-color: #d4d4d4;
+    }
+}
+
+.numberPlayingInnerWrap {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.numberPlayingInnerWrap ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.clearBoth {
+    clear: both;
+}
+
+.numberPlayingInnerWrap ul li {
+	background-color:transparent;
+    min-height: 20px;
+    color: #7accc8;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.numberPlayingInnerWrap ul li span {
+    display: block;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+	line-height: 20px;
+}
+
+
+
+.fastLottoWrap .minusSign:hover:after, .fastLottoWrap .plusSign:hover:after {background-color: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,.2);}
+.fastLottoWrap .minusSign:hover, .fastLottoWrap .plusSign:hover{color: #ffffff;}
+.fastLottoWrap:hover .bottomWrap{border:none;  background-color:#574196;}
+.fastLottoWrap:hover{border: 2px solid #574196; color: #574196;}
+
+
+.fastLottoWrap .minusSign:hover:after, .fastLottoWrap .plusSign:hover:after {background-color: rgba(35, 62, 71,0.65);
+    border: 1px solid rgba(255,255,255,.2);}
+.fastLottoWrap .minusSign:hover, .fastLottoWrap .plusSign:hover{color: #ffffff;}
+.fastLottoWrap:hover .bottomWrap{
+	border: none;
+    background-color: #13292F;
+    color: #fff;
+}
+.fastLottoWrap:hover{
+	border: 2px solid #13292F;
+    color: #fff;
+}
+
+
+
+.fastLottoPlayingArea{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.fastLottoPlayingArea li {
+    display: inline-block;
+    min-width: 118px;
+    margin-top: 4px !important;
+    margin: 0 1px;
+}
+.fastLottoWrap{
+    border: 2px solid #7accc8; height: 100px; border-radius: 10px; position: relative; left: 0px; top: 0px; text-align: center; font-size: 30px; color: #fff; width: 100%; background-color: transparent; overflow: hidden; font-weight: 300;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.fastLottoWrap.selected{
+        border: 2px solid #13292F;
+    color: #FFFFFF;}
+.fastLottoWrap .minusSign, .fastLottoWrap .plusSign{float: left;
+    text-align: center;
+    width: 33.33%;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    position:relative;}
+.fastLottoWrap .numbWrap{float: left;
+    text-align: center;
+    width: 33.33%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+}
+.fastLottoWrap .topWrap{clear: both; padding-top: 16px; font-weight: 300;}
+.fastLottoWrap .bottomWrap{border:none; clear: both; background-color: #7accc8; height: 40px; width: 100%; position: absolute; bottom: 0; right: 0; text-align: center; font-size: 20px; color: #102f33;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.fastLottoWrap.selected .bottomWrap{    
+	border: none;
+    background-color: #13292F;
+    color: #fff;
+}
+/*----.fastLottoWrap:hover .minusSign:after, .fastLottoWrap:hover .plusSign:after ---------*/
+.fastLottoWrap .minusSign:after, .fastLottoWrap .plusSign:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    z-index: 6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.15);
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+.fastLottoWrap.selected .minusSign:after, .fastLottoWrap.selected .plusSign:after, .fastLottoWrap:hover .minusSign:after, .fastLottoWrap:hover .plusSign:after{border: 1px solid rgba(255,255,255,0.18);}
+.fastLottoSelectedWrap .fastLottoWrap.selected{
+    cursor:default;
+    width:100%;
+}
+.fastLottoSelectedWrap .fastLottoWrap.selected .numbWrap {
+    width: 100%;
+}
+@media screen and (min-width:1200px){
+    .fastLottoPlayingArea li{margin: 0 4px;}
+}
+
+@media screen and (min-width:1080px) {
+    .numberPlayingInnerWrap ul li:hover {
+        -moz-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+        box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+        background-color: #d4d4d4;
+    }
+    .fastLottoPlayingArea li{margin: 0 4px;}
+}
+@media screen and (min-width: 991px) {
+    .numberPlayingInnerWrap ul li:hover {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+	    background-color: #7accc8;
+	    color: #102f33;
+    }
+}
+@media only screen and (max-width:400px) {
+    .numberPlayingOuterWrap {
+        padding: 6px 4px 4px 6px;
+    }
+    .fastLottoPlayingArea li{
+        min-width: 115px;
+    }
+}
+
+.user_pic {
+    margin: auto;
+    height: 150px;
+    border: 2px solid #0058a0;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.user_pic:hover, .edit-img-icon:hover {
+    cursor:pointer
+}
+
+.edit-img-icon {
+    position: absolute;
+    top: -6px;
+    color: #ffffff;
+    background: black;
+    border-radius: 15px;
+    padding: 5px;
+    z-index: 1;
+}
+
+.profile_name {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Roboto',sans-serif;
+}
+
+.balance-divs {
+    width: 80%;
+    margin: auto;
+    color: white;
+    border: 2px solid #0058a0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.balance-divs:hover {
+    /*cursor: pointer;*/
+    /*box-shadow: 0 0 11px black;*/
+}
+
+.balance-divs-title {
+    background: #0058a0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.balance-divs-text {
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.profile_div {
+    margin-top: 25px;
+}
+
+@media (max-width: 767px) {
+    .profile_div {
+        text-align: center;
+    }
+	.pmsHeader {
+    height: auto;
+    padding-bottom: 10px;
+	}
+}
+
+.avail_bal_title {
+    border: 2px solid #0058a0;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.avail_bal_text {
+    border: 2px solid #0058a0;
+    border-radius: 3px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.edit-profile {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+}
+
+.edit-profile:hover {
+    cursor: pointer;
+}
+
+.imageBox {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    border: 1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor: move;
+    margin: auto;
+}
+
+.imageBox .thumbBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox .spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+
+.sportsLottWrap {
+    margin: 15px auto;
+    cursor: default;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.31);
+}
+.sportsLottWrap .gameDivInner{padding: 25px;}
+.sportsLottWrap .titleAndDateWrap {
+    margin: -25px -25px 20px -25px;
+    color: #fff;
+    background-color: #2e909b;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 6px 8px;
+    line-height: 120%;
+}
+.sportsLottWrap .titleAndDateWrap .dateWrap{ float:left;}
+.sportsLottWrap .titleAndDateWrap .dateWrap strong{font-weight: 400;}
+.sportsLottWrap .titleAndDateWrap .titleNameWrap{ float:right;}
+.sportsLottWrap .abbri{margin-top: 5px; font-size: 32px; color: #4b3685; font-weight: 300; line-height: 100%;display:none; }
+.sportsLottWrap .abbriName{/*font-size:11px;*/ font-size:16px;line-height:110%; color:#fff; margin-bottom: 15px; /*word-break: break-word;*/}
+.sportsLottWrap .vsWrap {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: lowercase;
+    background-color: #f00;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 7px;
+    /*margin-top: 13px;*/
+}
+.sportsLottWrap .selectArea .numWrap, .sportsLottWrap .selectArea .numWrapConFirm {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 39px;
+    vertical-align: middle;
+    color: #303030;
+    border: 1px solid #584096;
+    background-color: #ffffff;
+    cursor:pointer;
+    -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out;
+}
+
+.sportsLottWrap .selectArea .numWrap.selected, .sportsLottWrap .selectArea .numWrapConFirm.selected{
+    border: 1px solid #584096;
+    background-color: #584096;
+    color:#ffffff;
+}
+.sportsLottWrap .selectArea {
+    text-align: center;
+    margin: 10px -15px 5px -15px;
+    position: relative;
+}
+.sportsLottWrap .selectArea > div {
+    text-align: center;
+    float: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0px 0 10px 0;
+}
+.sportsLottWrap .selectArea > div.col-xs-2{width: 18.5%;}
+.sportsLottWrap .selectArea > div.col-xs-4{margin: 0px 5px 10px 5px; width: 27%;}
+.sportsLottWrap .selectArea .textWrap, .sportsLottWrap .selectArea .textWrapConFirm {
+    text-align: center;
+    display: block;
+    border: 1px solid #7accc8;
+    background-color:transparent;
+    color: #7accc8;
+    border-radius: 4px;
+    padding: 10px 0 12px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 300;
+    cursor: pointer;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.sportsLottWrap .selectArea .textWrap.selected, .sportsLottWrap .selectArea .textWrapConFirm.selected{
+    border: 1px solid #2d909b;
+    background-color: #2d909b;
+    color:#ffffff;
+}
+.gameDivSportsConfirm.sportsLottWrap .titleAndDateWrap, .gameDivSportsConfirm.sportsLottWrap .vsWrap{background-color: #606060;}
+.gameDivSportsConfirm.sportsLottWrap .abbri{color: #606060;}
+.gameDivSportsConfirm.sportsLottWrap .selectArea .textWrap, .gameDivSportsConfirm.sportsLottWrap .selectArea .textWrapConFirm{border: 1px solid #606060; cursor: default;}
+.gameDivSportsConfirm.sportsLottWrap .selectArea .textWrapConFirm.selected {
+    border: 1px solid #584096;
+}
+.gameDivSportsColor.sportsLottWrap, .gameDivSportsConfirm.sportsLottWrap {
+    margin-bottom: 25px;
+}
+
+.gameDivtkt.sportsLottWrap {
+    margin: 12px 0;
+    border: 1px solid #594298;
+}
+.gameDivtkt.sportsLottWrap .selectArea .textWrap:hover, .gameDivtkt.sportsLottWrap .selectArea .textWrap:focus, .gameDivtkt.sportsLottWrap .selectArea .textWrap.selected, .gameDivtkt.sportsLottWrap .selectArea .textWrapConFirm.selected, .gameDivtkt.sportsLottWrap .selectArea .textWrap, .gameDivtkt.sportsLottWrap .selectArea .textWrapConFirm, .gameDivtkt.sportsLottWrap .selectArea .numWrap, .gameDivtkt.sportsLottWrap .selectArea .numWrapConFirm, .gameDivSportsColor.sportsLottWrap .selectArea .textWrapConFirm, .gameDivSportsColor.sportsLottWrap .selectArea .numWrapConFirm{ cursor:default;}
+.gameDivSportsConfirm.sportsLottWrap .selectArea .numWrap, .gameDivSportsConfirm.sportsLottWrap .selectArea .numWrapConFirm{border: 1px solid #606060; cursor:default;}
+.gameDivSportsConfirm.sportsLottWrap .selectArea .numWrapConFirm.selected{ border: 1px solid #584096;}
+
+.sportsLottWrap .selectArea .redBlocker{ position:absolute; background-color:rgba(255,40,45,0.87); padding:2px 8px; display:block; margin: auto -10px; margin-top: 7px; color: #fff; font-weight: 300; font-size: 11px; line-height: 105%; text-transform: uppercase; top: 0; bottom: 0; left:0; right:0; text-align: left;    height: 27px;}
+.sportsLottWrap .selectArea .redBlocker .row > div:last-child{ text-align:center;  padding-top: 5px;}
+
+/* SPORTS BETTING ticket css start */
+.typeOfBet {
+    font-size: 13px;
+    margin: 2px 0px;
+}
+
+.betsmallCap strong {
+    font-size: 13px;
+}
+
+.sbettingTicket  .sportsLottWrap .gameDivInner {
+    padding:5px;
+}
+
+.sbettingTicket .gameDivtkt.sportsLottWrap{
+	    margin: 5px 0;
+}
+/* SPORTS BETTING ticket css end */
+
+
+@media screen and (min-width: 991px){
+    .sportsLottWrap .selectArea .textWrap:hover, .sportsLottWrap .selectArea .textWrap:focus{
+        border: 1px solid #584096;
+        background-color: #584096;
+        color:#ffffff;
+    }
+    .sportsLottWrap .selectArea .numWrap:hover, .sportsLottWrap .selectArea .numWrap:focus{
+        border: 1px solid #584096;
+        background-color: #584096;
+        color:#ffffff;
+    }
+}
+
+@media screen and (min-width:1080px){
+    .sportsLottWrap .selectArea .textWrap:hover, .sportsLottWrap .selectArea .textWrap:focus{
+        border: 1px solid #2d909b;
+        background-color: #2d909b;
+        color:#ffffff;
+    }
+    .sportsLottWrap .selectArea .numWrap:hover, .sportsLottWrap .selectArea .numWrap:focus{
+		border: 1px solid #2e909b;
+		background-color: #2e909b;
+		color: #ffffff;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .instantGroupWrap.sportsGroup > .row:before, .instantGroupWrap.sportsGroup > .row:after{ display:none;}
+}
+
+@media only screen and (max-width:400px){
+    .sportsLottWrap .selectArea .textWrap, .sportsLottWrap .selectArea .textWrapConFirm{
+        font-size:16px;
+    }
+    .sportsLottWrap .titleAndDateWrap .titleNameWrap {
+        float: none;
+        display: block;
+        margin-top: 5px;
+        text-align: center;
+    }
+    .sportsLottWrap .titleAndDateWrap .dateWrap{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .sportsLottWrap .selectArea .numWrap, .sportsLottWrap .selectArea .numWrapConFirm{
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .sportsLottWrap .gameDivInner {
+        padding: 15px 5px;
+    }
+    .sportsLottWrap .titleAndDateWrap{    margin: -15px -5px 20px -5px;}
+    .sportsLottWrap .abbri{font-size: 18px; font-weight: 400;}
+    .gameDivtkt.sportsLottWrap .selectArea .numWrap, .gameDivtkt.sportsLottWrap .selectArea .numWrapConFirm{
+        width: 36px;
+        height: 36px;
+        line-height: 32px;
+    }
+    .gameDiv.sportsLottWrap .col-xs-2 {
+        padding: 0;
+    }
+    .sportsLottWrap .selectArea .redBlocker{
+        width:auto;
+        margin:auto 10px;
+    }
+}
+
+
+.sportslectionMainwrap{padding: 20px; background-color: rgba(19, 41, 49, 0.35); border-radius: 7px;}
+.sportslectionWrap{margin-top:0px !important;}
+#gameSelectionType .moreTournmentNamesWrap.sportslectionWrap:before{display:none;}
+.chooseSportstxt{ text-align:center;  font-size:22px; font-weight: 300; margin-bottom:20px; text-transform: uppercase;}
+.sportsb-ticket .ticket-d h3{color:#102f33;}

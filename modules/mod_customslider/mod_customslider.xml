@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="install">
+    <name>Custom Slider !</name>
+    <author>Anil Rawat</author>
+    <version>1.0.0</version>
+    <description>Custom Slider is an innovative, responsive Joomla Slider that displays your content in the most beautiful way. Whether it's a Slider, Carousel or Hero Scene.</description>
+    <files>
+        <folder>assets</folder>
+        <folder>form</folder>
+        <filename>mod_customslider.xml</filename>
+        <filename module="mod_customslider">mod_customslider.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <scriptfile>script.php</scriptfile>
+    <config>
+        <fields name="params" >
+            <fieldset name="basic">                
+<!--                <field 
+                    name="sliderSize" 
+                    type="radio" 
+                    default="1" 
+                    label="Select an option" 
+                    description="Size of slider to show" 
+                    class="btn-group"
+                >
+                    <option value="1">Small</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Big</option>
+                </field>-->
+                <field 
+                    name="sliderType" 
+                    type="radio" 
+                    default="1" 
+                    label="Slider Type" 
+                    description="Type of slider to show" 
+                    class="btn-group"
+                >
+                    <option value="1">Single</option>
+                    <option value="2">Multiple</option>
+<!--                    <option value="3">Center</option>
+                    <option value="4">Lazy Load</option>
+                    <option value="5">Autoplay</option>-->
+                </field>
+                <field 
+                    name="slidesToshow" 
+                    type="integer" 
+                    default="2" 
+                    label="No. of slides in view" 
+                    description="Image number to be show"
+                    first="2" 
+                    last="5" 
+                    step="1"
+                    showon="sliderType!:1[AND]sliderType!:3" 
+                />    
+<!--                <field 
+                    name="slidesToshowcenter" 
+                    type="integer" 
+                    default="1" 
+                    label="No. of images to show" 
+                    description="Image number to be show"
+                    first="1" 
+                    last="5" 
+                    step="1"
+                    showon="sliderType:3" 
+                /> -->
+                <field 
+                    name="slidesToscroll" 
+                    type="integer" 
+                    default="1" 
+                    label="No. of slides to scroll" 
+                    description="Slide number to scroll"
+                    first="1" 
+                    last="5" 
+                    step="1"
+                    showon="sliderType!:1" 
+                />  
+                <field
+                    type="text"
+                    name="sliderCustomClass"
+                    label="Slider Custom Class"
+                    description="Main Slider Class"
+                    default=""
+                    size="25"
+                />  
+                <field
+                        name="sliderDirection"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Slider Direction"
+                        description="Slider Direction"
+                        default="1">
+                    <option value="1">Horizontal</option>
+                    <option value="0">Vertical</option>
+                </field>
+                <field
+                        name="enableArrows"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Show Arrows"
+                        description="Arrows to be shown or not"
+                        default="1">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>     
+                <field
+                        name="sliderLoop"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Slider Loop"
+                        description="Slider to be in loop"
+                        default="1">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="autoplayEnable"
+                        type="radio"
+                        class="btn-group btn-group-yesno "
+                        label="Autoplay"
+                        description="Enable Autoplay"
+                        default="1">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>           
+                <field 
+                    name="autoplaySpeed" 
+                    type="integer" 
+                    default="1000" 
+                    label="Autoplay speed (ms)" 
+                    description="Time to autoplay"
+                    first="1000" 
+                    last="5000" 
+                    step="1000"
+                    showon="autoplayEnable:1" 
+                />                
+                <field 
+                    name="imageList" 
+                    type="subform"
+                    formsource="modules/mod_customslider/form/imageForm.xml"
+                    label="Select images" 
+                    description="Image List Selectiom" 
+                    multiple="true"
+                    min="1"
+                    max="20"
+                    layout="joomla.form.field.subform.repeatable"
+                />                 
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                />
+                <field
+                        name="moduleclass_sfx"
+                        type="textarea"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                        rows="3"
+                />
+                <field
+                        name="cache"
+                        type="list"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC"
+                        default="1"
+                >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field
+                        name="cache_time"
+                        type="text"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+                        default="900"
+                />
+                <field
+                        name="cachemode"
+                        type="hidden"
+                        default="static"
+                >
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Player Notification Bar</name>
+    <author>Harish Indouria</author>
+    <creationDate>September 4, 2015</creationDate>
+    <version>1.0.0</version>
+    <description>This module allows you to show a notification bar of player.</description>
+
+    <!--<customContent />-->
+
+    <files>
+        <filename module="mod_notificationbar">mod_notificationbar.php</filename>
+        <filename>mod_notificationbar.xml</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+    <config></config>
+</extension>

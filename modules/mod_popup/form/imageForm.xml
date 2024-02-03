@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="section1" label="Section1">        
+        <field name="type"
+            type="list"
+            default="images"
+            label="Media Type"
+            description="Media Type"
+        >
+            <option value="images">Image</option>
+            <option value="videos">Youtube</option>
+            <option value="text">Text</option>
+        </field>               
+    </fieldset>
+    <field
+        type="media"
+        name="imageItem"
+        label="Select Images"
+        description="Images to be seen in popup app"
+        directory="popupapp"
+        preview="true"
+        preview_width="100"
+        showon="type:images" 
+    />  
+    <field 
+        name="videolink" 
+        label ="Video Link"
+        type="textarea" 
+        description="Youtube link"
+        rows="5" 
+        cols="5" 
+        filter="raw"
+        showon="type:videos" 
+    />
+    <field 
+        name="title" 
+        label ="Title"
+        type="textarea" 
+        description="Title"
+        rows="3" 
+        cols="5" 
+        filter="raw"
+        showon="type:text" 
+    />
+    <field 
+        name="description" 
+        label ="Description"
+        type="textarea" 
+        description="Description"
+        rows="10" 
+        cols="5" 
+        filter="raw"
+        showon="type:text" 
+    />
+</form>

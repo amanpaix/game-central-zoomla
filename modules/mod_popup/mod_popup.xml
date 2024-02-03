@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Pop Up</name>
+    <author>Harish Indouria</author>
+    <creationDate>September 14, 2015</creationDate>
+    <version>1.0.0</version>
+    <description>This module allows you to create pop-ups to show on various pages.</description>
+
+    <files>
+        <filename module="Pop Up">mod_popup.php</filename>
+        <filename>mod_popup.xml</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+<!--                <field
+                    name="is_playerwise"
+                    type="radio"
+                    class="btn-group btn-group-yesno"
+                    label="Is Playerwise"
+                    description="Whether this module will be used to show playerwise banners."
+                    default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>-->                
+                <field
+                    name="platform"
+                    type="radio"
+                    class="btn-group btn-group-yesno"
+                    label="Platform"
+                    description="Whether this module will be used to show in desktop or mobile app."
+                    default="1">
+                    <option value="1">Desktop</option>
+                    <option value="0">Mobile Api</option>
+                </field>
+                <field name="modal_type"
+                       type="list"
+                       default=""
+                       label="Modal Type"
+                       description="Modal Type"
+                       showon="platform:1"                
+                >
+                    <option value="">Medium Modal</option>
+                    <option value="modal-sm">Small Modal</option>
+                    <option value="modal-lg">Large Modal</option>
+                </field>
+                <field name="backdrop"
+                       type="list"
+                       default=""
+                       label="backdrop"
+                       description="backdrop"                
+                >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+<!--                <field
+                        name="prepare_content"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        label="Prepare Content"
+                        description="Prepare Content"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>-->
+                <field
+                    name="modal_class"
+                    type="text"
+                    class="required"
+                    filter="safehtml"
+                    label="Modal Class"
+                    description="Modal Class" />
+                <field
+                    name="modal_id"
+                    type="text"
+                    class="required"
+                    filter="safehtml"
+                    label="Modal Id"
+                    description="Modal Id" />
+<!--                <field
+                        name="on_desktop"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        label="On Desktop"
+                        description="Show/Hide this modal on desktop"
+                        default="1">
+                    <option value="1">Show</option>
+                    <option value="0">Hide</option>
+                </field>
+                <field
+                        name="on_non_desktop"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        label="On Tablets/Mobile"
+                        description="Show/Hide this modal on tablet/mobile"
+                        default="1">
+                    <option value="1">Show</option>
+                    <option value="0">Hide</option>
+                </field>
+                <field
+                        name="on_mobiles"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        label="Show On Mobile"
+                        description="Show/Hide this modal on mobile"
+                        default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>-->                    
+                <field
+                    name="content"
+                    label ="Module Content"
+                    type="editor"
+                    width="300"
+                    filter="raw"
+                    buttons="true"
+                    description="Content of module."
+                    showon="platform:1"
+                />  
+                <field 
+                    name="contentType"
+                    type="list"
+                    default="images"
+                    label="Content Type in Api"
+                    description="Content Type of Api"
+                    showon="platform:0"
+                >
+                    <option value="images">Image</option>
+                    <option value="videos">Youtube</option>
+                    <option value="text">Text</option>
+                    <option value="any">Any</option>
+                </field>             
+                <field 
+                    name="imageList" 
+                    type="subform"
+                    formsource="modules/mod_popup/form/imageForm.xml"
+                    label="Content" 
+                    description="Content Selectiom" 
+                    multiple="true"
+                    min="1"
+                    max="10"
+                    layout="joomla.form.field.subform.repeatable"
+                    showon="platform:0"
+                />
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

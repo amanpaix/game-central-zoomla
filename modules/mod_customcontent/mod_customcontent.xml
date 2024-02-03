@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="install">
+    <name>Custom Content !</name>
+    <author>Anil Rawat</author>
+    <version>1.0.0</version>
+    <description>A simple content module.</description>
+    <files>
+        <folder>assets</folder>
+        <folder>form</folder>
+        <filename>mod_customcontent.xml</filename>
+        <filename module="mod_customcontent">mod_customcontent.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <scriptfile>script.php</scriptfile>
+    <config>
+        <fields name="params" >
+            <fieldset name="basic"> 
+                <field
+                    type="text"
+                    name="mainHeading"
+                    label="Main Heading"
+                    description="Enter Main Heading you want to show"
+                    default=""
+                    size="10"           
+                />               
+                <field 
+                    name="contentType" 
+                    type="radio" 
+                    default="1" 
+                    label="Select an option" 
+                    description="Type of Content design to show" 
+                    class="btn-group"
+                >
+                    <option value="1">Tabs</option>
+                    <option value="2">Accordian</option>                    
+                </field>
+                <field
+                    type="text"
+                    name="mainClass"
+                    label="Add your custom class"
+                    description="Enter Class you want to add"
+                    default=""
+                    size="10"           
+                /> 
+                <field 
+                    name="contentList" 
+                    type="subform"
+                    formsource="modules/mod_customcontent/form/contentForm.xml"
+                    label="Set Contents" 
+                    description="Content Setting" 
+                    multiple="true"
+                    min="1"
+                    max="10"
+                    layout="joomla.form.field.subform.repeatable"
+                /> 
+            </fieldset>
+        </fields>
+    </config>
+</extension>
